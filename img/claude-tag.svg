@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740">
+  <rect width="1200" height="740" fill="#0b1220"/>
+  <rect x="40" y="40" width="1120" height="660" rx="24" fill="#111827" stroke="#334155"/>
+  <text x="80" y="120" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="3">ANTHROPIC · SLACK</text>
+  <text x="80" y="200" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="52" font-weight="700">Claude Tag</text>
+  <text x="80" y="260" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="26">Czyta cały kanał, nie jedną wiadomość</text>
+  <rect x="80" y="320" width="240" height="80" rx="16" fill="#1e293b" stroke="#334155"/>
+  <text x="200" y="368" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20">inline</text>
+  <rect x="340" y="320" width="240" height="80" rx="16" fill="#1e293b" stroke="#334155"/>
+  <text x="460" y="368" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20">wątek</text>
+  <rect x="600" y="320" width="240" height="80" rx="16" fill="#1e293b" stroke="#334155"/>
+  <text x="720" y="368" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20">dopięcie</text>
+  <rect x="860" y="320" width="240" height="80" rx="16" fill="#1e293b" stroke="#334155"/>
+  <text x="980" y="368" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20">cisza</text>
+  <text x="80" y="500" fill="#4ade80" font-family="ui-sans-serif,system-ui,sans-serif" font-size="36" font-weight="700">~30% lepiej decyduje, kiedy wejść</text>
+  <text x="80" y="560" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22">Team + Enterprise · extra context poza limitami</text>
+</svg>
