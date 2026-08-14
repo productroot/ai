@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740">
+  <rect width="1200" height="740" fill="#0b1220"/>
+  <rect x="40" y="40" width="1120" height="660" rx="24" fill="#111827" stroke="#334155"/>
+  <text x="80" y="110" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="3">CLAUDE CODE · 14.08.2026</text>
+  <text x="80" y="180" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="48" font-weight="700">Auto mode = default</text>
+  <text x="80" y="240" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="24">Nowe sesje Pro / Max / Team</text>
+  <rect x="80" y="300" width="240" height="56" rx="28" fill="#1e3a5f"/>
+  <text x="200" y="336" text-anchor="middle" fill="#93c5fd" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="700">Pro / Max / Team</text>
+  <rect x="340" y="300" width="180" height="56" rx="28" fill="#052e16"/>
+  <text x="430" y="336" text-anchor="middle" fill="#4ade80" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="700">Shift+Tab</text>
+  <rect x="540" y="300" width="220" height="56" rx="28" fill="#1e293b" stroke="#334155"/>
+  <text x="650" y="336" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="700">Enterprise opt-in</text>
+  <line x1="80" y1="420" x2="1120" y2="420" stroke="#334155"/>
+  <circle cx="200" cy="500" r="12" fill="#fbbf24"/>
+  <circle cx="500" cy="500" r="12" fill="#60a5fa"/>
+  <circle cx="800" cy="500" r="12" fill="#4ade80"/>
+  <line x1="212" y1="500" x2="488" y2="500" stroke="#334155" stroke-width="3"/>
+  <line x1="512" y1="500" x2="788" y2="500" stroke="#334155" stroke-width="3"/>
+  <text x="200" y="560" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16">7.08 blog</text>
+  <text x="500" y="560" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16">docs: Starting August 14</text>
+  <text x="800" y="560" text-anchor="middle" fill="#4ade80" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16">dzień D · default on</text>
+</svg>
