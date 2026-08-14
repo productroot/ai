@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto mode w Claude Code. Ultrafast Sol. Slack Tag. · 14.08.2026</title>
+<style>
+:root {
+  --bg:#0b1220; --card:#111827; --card2:#1e293b; --line:#334155;
+  --txt:#e2e8f0; --mut:#94a3b8; --pl:#1d4ed8; --gold:#fbbf24;
+  --win:#4ade80; --risk:#f87171; --ok:#60a5fa; --soft:#0f172a;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--txt); line-height: 1.5;
+}
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 22px 72px; }
+.top {
+  display:flex; justify-content:space-between; align-items:flex-end; gap:16px;
+  margin-bottom: 14px; flex-wrap:wrap;
+}
+.kicker { color: var(--gold); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; }
+h1 { font-size: 34px; line-height: 1.12; letter-spacing: -.02em; }
+.sub { color: var(--mut); font-size: 15px; max-width: 760px; }
+.live {
+  background:#1e293b; border:1px solid var(--line); border-radius: 999px;
+  padding: 8px 14px; font-size: 13px; color: var(--ok); font-weight: 700; white-space: nowrap;
+}
+.tldr { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin: 22px 0 18px; }
+.fact {
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px;
+}
+.fact b { display:block; color: var(--gold); font-size: 11px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:4px; }
+.fact span { font-size: 14px; color: var(--txt); }
+.hero {
+  background: linear-gradient(180deg, #1e293b 0%, #111827 100%);
+  border: 1px solid var(--line); border-radius: 16px; overflow: hidden; margin-bottom: 14px;
+}
+.hero img { width: 100%; height: 300px; object-fit: contain; background:#0b1220; display: block; }
+.hero-body { padding: 18px 22px 22px; }
+.meta { color: var(--mut); font-size: 13px; margin-top: 4px; }
+.quote {
+  border-left: 3px solid var(--gold); padding: 8px 12px; margin: 10px 0;
+  color: #dbeafe; font-size: 14px; background: #0b1220; border-radius: 0 10px 10px 0;
+}
+.grid2 { display:grid; grid-template-columns: 1.15fr .85fr; gap: 12px; margin: 12px 0; }
+.grid2eq { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+.photos { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 12px; }
+.photos img { width:100%; height: 220px; object-fit:cover; border-radius:12px; border:1px solid var(--line); display:block; }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  padding: 16px 18px; margin-bottom: 0;
+}
+.card h2 { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.card h3 { font-size: 20px; margin: 0 0 6px; }
+.cap { color: var(--mut); font-size: 12px; margin-top: 4px; }
+.tag {
+  display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .08em;
+  text-transform: uppercase; padding: 3px 8px; border-radius: 999px; margin-right: 6px; vertical-align: middle;
+}
+.tag-ok { background: #052e16; color: #4ade80; }
+.tag-med { background: #1e3a5f; color: #93c5fd; }
+.tag-rum { background: #3f1d08; color: #fbbf24; }
+ul { margin: 8px 0 0 18px; font-size: 14px; }
+li { margin: 4px 0; }
+.item { margin: 8px 0; font-size: 14px; }
+.keys { display:flex; gap:8px; flex-wrap:wrap; margin: 10px 0; }
+.keys span { background:#0b1220; border:1px solid #334155; border-radius:10px; padding:6px 10px; font-size:13px; }
+.up { background: #052e16; border: 1px solid #166534; border-radius: 12px; padding: 12px 14px; }
+.down { background: #450a0a; border: 1px solid #991b1b; border-radius: 12px; padding: 12px 14px; }
+.up h3, .down h3 { font-size: 14px; margin-bottom: 4px; }
+.up h3 { color: #4ade80; }
+.down h3 { color: #f87171; }
+.five { margin: 4px 0 0 20px; }
+.five li { margin: 6px 0; }
+.pills { display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
+.pill { display:inline-block; background:#1e293b; border:1px solid var(--line); border-radius:999px; padding:5px 11px; font-size:12px; color:var(--mut); }
+.footer { color: var(--mut); font-size: 12px; margin-top: 22px; text-align: center; }
+.note { font-size:12px; color:var(--mut); margin-top:10px; }
+p { margin: 0; }
+p + p { margin-top: 8px; }
+a { color: var(--ok); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.tweet {
+  background: var(--soft); border: 1px solid var(--line); border-radius: 12px;
+  padding: 12px 14px; font-size: 14px; margin: 8px 0; color: var(--txt);
+}
+@media (max-width: 980px) {
+  .tldr, .grid2, .grid2eq, .photos { grid-template-columns: 1fr; }
+  h1 { font-size: 26px; }
+  .hero img { height: 200px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="kicker">Poranny przegląd AI · piątek 14.08.2026</div>
+      <h1>Auto mode w Claude Code. Ultrafast Sol. Slack Tag.</h1>
+      <p class="sub">Ostatnie ~24h · Europe/Warsaw · źródła pierwotne. Bez recyklingu wydań z 12–13.08.</p>
+    </div>
+    <div class="live">Auto mode default · dzień D</div>
+  </div>
+
+  <section class="tldr" aria-label="TL;DR">
+    <div class="fact"><b>WAŻNE / UPDATE</b><span>Claude Code: auto mode default dla nowych sesji Pro/Max/Team. Docs nadal „Starting August 14”. Brak delay/rollback. Rano CEST za wcześnie na lawinę user reports.</span></div>
+    <div class="fact"><b>NOWE</b><span>OpenAI Ultrafast: GPT-5.6 Sol do ~750 tok/s (~14× Standard). Cerebras. Limited preview.</span></div>
+    <div class="fact"><b>NOWE</b><span>ChatGPT Computer History na Macu — nie EEA/UK/CH. Dla PL niedostępne.</span></div>
+    <div class="fact"><b>NOWE</b><span>Claude Tag czyta cały kanał Slack. ~30% lepiej decyduje, kiedy wchodzić. Team/Enterprise.</span></div>
+    <div class="fact"><b>NOWE</b><span>X: większy open-source rankera For You + Under the Hood (JSON labels).</span></div>
+    <div class="fact"><b>KRÓTKO</b><span>IBM × OpenAI Elite GTM · Databricks $5B @ $190B.</span></div>
+  </section>
+
+  <section class="hero">
+    <img src="img/hero.svg" alt="Claude Code auto mode — harmonogram default od 14 sierpnia">
+    <div class="hero-body">
+      <div class="kicker">UPDATE · Claude Code · dzień D</div>
+      <h3>Auto mode jest dziś defaultem nowych sesji Pro / Max / Team</h3>
+      <div class="meta">Blog 7.08.2026 · docs nadal: „Starting August 14, 2026” · rano Europe/Warsaw</div>
+      <div class="keys">
+        <span>Pro / Max / Team</span><span>Shift+Tab</span><span>Enterprise = opt-in</span><span>klasyfikator poza limitami od 7.08</span>
+      </div>
+      <p><span class="tag tag-med">UPDATE</span> Harmonogram z 7 sierpnia nie został cofnięty ani przesunięty. Nowe sesje na planach Pro, Max i Team startują w auto mode, o ile użytkownik nie przypiął własnego <code>defaultMode</code> — wtedy jednorazowy prompt. Enterprise, Claude API, Bedrock i pokrewne platformy zostają przy opt-in.</p>
+      <p>Klasyfikator nie jest liczony do limitów Pro/Max/Team od 7.08. Przełączanie trybu: Shift+Tab (CLI) albo dropdown na desktopie. Rano CEST jest za wcześnie, by ogłaszać falę zgłoszeń użytkowników — tego jeszcze nie ma w źródłach.</p>
+      <p class="note">Źródła: <a href="https://claude.com/blog/auto-mode-default-in-claude-code">claude.com/blog/auto-mode-default-in-claude-code</a> · <a href="https://code.claude.com/docs/en/permission-modes">code.claude.com/docs/en/permission-modes</a></p>
+    </div>
+  </section>
+
+  <div class="photos">
+    <div>
+      <img src="img/ultrafast.svg" alt="OpenAI Ultrafast GPT-5.6 Sol na Cerebras">
+      <div class="cap">Ultrafast · GPT-5.6 Sol · do ~750 tok/s · Cerebras · limited preview</div>
+    </div>
+    <div>
+      <img src="img/claude-tag.svg" alt="Claude Tag w Slacku — kontekst całego kanału">
+      <div class="cap">Claude Tag · cały kanał, nie jedna wiadomość · Team + Enterprise</div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>UPDATE · Claude Code</h2>
+      <h3>Auto mode default — co się zmienia, a co nie</h3>
+      <p><span class="tag tag-med">UPDATE</span> Blog z 7.08: od 14 sierpnia nowe sesje Pro/Max/Team lecą w auto, chyba że użytkownik ma przypięty własny default — wtedy jednorazowe pytanie, czy przełączyć. Przypięty default bez zgody = bez zmian.</p>
+      <p><b>Bez zmian dziś:</b> Enterprise, API, Claude Platform on AWS, Bedrock, Google Agent Platform i Microsoft Foundry zostają przy opt-in. Admini Enterprise mogą wymusić default przez managed settings. Anthropic zapowiada default „w nadchodzącym miesiącu” — to plan, nie fakt dnia.</p>
+      <p>Auto mode nie pyta przy każdej komendzie: klasyfikator blokuje akcje nieodwracalne, destrukcyjne albo skierowane poza środowisko. Po 3 blokadach z rzędu albo 20 w sesji — powrót do ręcznych zgód. Shift+Tab przełącza tryb.</p>
+      <div class="quote">Docs (permission-modes): „Starting August 14, 2026, auto mode becomes the default permission mode for new sessions on Pro, Max, and Team plans.” Brak komunikatu o delay albo rollback.</div>
+      <p class="note">Fakt: harmonogram i dokumentacja. Spekulacja: skala problemów u użytkowników — za wcześnie rano CEST.</p>
+    </section>
+
+    <section class="card">
+      <h2>NOWE · OpenAI + Cerebras</h2>
+      <h3>Ultrafast: GPT-5.6 Sol do ~750 tok/s</h3>
+      <p><span class="tag tag-ok">NOWE</span> 13.08 OpenAI i Cerebras pokazały Ultrafast — nowy tier w API. Do ~750 tokenów wyjścia na sekundę, ok. 14× Standard. Limited preview, wybrani klienci. Dostęp ma się poszerzać wraz z pojemnością.</p>
+      <p>To nie jest Fast z lipca (ok. 2,5×). Ceny i data GA nie zostały podane. Cerebras podaje Wafer-Scale Engine jako warstwę inferencji; OpenAI nie ujawniło cennika.</p>
+      <p class="note">Źródła: <a href="https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai">cerebras.ai/blog/…ultrafast…</a> · <a href="https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/">TechCrunch, 13.08</a></p>
+    </section>
+  </div>
+
+  <div class="grid2eq">
+    <section class="card">
+      <h2>NOWE · ChatGPT</h2>
+      <h3>Computer History na Macu — nie dla PL</h3>
+      <p><span class="tag tag-ok">NOWE</span> Changelog 13.08. Opt-in: aktywność z aplikacji i stron → wspomnienia i oś czasu. Zastępuje Chronicle. Nie robi zrzutów ekranu ani nagrań audio — zapisuje zdarzenia interakcji.</p>
+      <p>Pro / Business / Enterprise, wyłączone domyślnie. Business/Enterprise: najpierw admin, potem osobisty opt-in. Wymaga Memories. Nie działa z kluczem API ani Bedrock.</p>
+      <p><span class="tag tag-rum">Dla PL</span> <b>Niedostępne w EEA, UK i Szwajcarii.</b> Nie tracić czasu na ustawienia — w Polsce funkcji nie ma.</p>
+      <p class="note">Źródło: <a href="https://learn.chatgpt.com/docs/customization/computer-history">learn.chatgpt.com/docs/customization/computer-history</a></p>
+    </section>
+
+    <section class="card">
+      <h2>NOWE · Anthropic</h2>
+      <h3>Claude Tag czyta cały kanał Slack</h3>
+      <p><span class="tag tag-ok">NOWE</span> 13.08. Zamiast jednej wiadomości — kontekst kanału, pamięć i stałe instrukcje. Anthropic: ok. 30% lepiej decyduje, kiedy wejść, a kiedy milczeć.</p>
+      <p>Cztery ruchy: odpowiedź inline · wątek · dopięcie do trwającej pracy · cisza. Dodatkowy kontekst nie wchodzi w limity usage/spend. Live na Team i Enterprise.</p>
+      <p class="note">Źródło: <a href="https://claude.com/blog/claude-tag-now-reads-even-more-of-the-room">claude.com/blog/claude-tag-now-reads-even-more-of-the-room</a></p>
+    </section>
+  </div>
+
+  <div class="grid2eq">
+    <section class="card">
+      <h2>NOWE · X</h2>
+      <h3>Większy open-source rankera For You</h3>
+      <p><span class="tag tag-ok">NOWE</span> 13.08. X poszerza publiczny kod rankera For You (xai-org/x-algorithm, Apache v2) — m.in. konfiguracja modelu, filtry, wagi sygnałów. TechCrunch: baza ok. 10–15× większa niż wcześniej. To rozszerzenie wydania ze stycznia 2026, nie debiut.</p>
+      <p>Under the Hood w Ustawieniach: etykiety JSON dla kont z ≥10 postami / miesiąc (na start pilot, konta ≥1 rok). Dziś 14.08 wypada data payout Revenue Sharing — program z 7–8.08, to nie jest nowy news dnia.</p>
+      <p class="note">Źródła: <a href="https://techcrunch.com/2026/08/13/x-open-sources-its-ranking-algorithm-letting-users-see-if-theyve-been-shadowbanned/">TechCrunch, 13.08</a> · <a href="https://github.com/xai-org/x-algorithm">github.com/xai-org/x-algorithm</a></p>
+    </section>
+
+    <section class="card">
+      <h2>KRÓTKO · rynek</h2>
+      <h3>IBM × OpenAI Elite · Databricks $5B</h3>
+      <p class="item"><span class="tag tag-ok">NOWE</span> <b>IBM × OpenAI, 13.08.</b> IBM wchodzi do Elite partner tier. Joint GTM, modele (m.in. GPT-5.6, Codex, ChatGPT Work) w IBM Consulting Advantage, osobna OpenAI Practice. Warunków finansowych nie podano. Źródło: IBM Newsroom / TechCrunch.</p>
+      <p class="item"><span class="tag tag-ok">NOWE</span> <b>Databricks, 13.08.</b> $5 mld przy wycenie $190 mld. Lead: Coatue; m.in. Blackstone, MGX, T. Rowe Price, Sixth Street Growth. Źródło: Databricks / CNBC.</p>
+      <p class="note">Krótko, bo to tło rynkowe — nie produkt dnia dla czytelnika w PL.</p>
+    </section>
+  </div>
+
+  <div class="grid2eq">
+    <div class="up">
+      <h3>Fakty dnia</h3>
+      <ul>
+        <li>Auto mode default: harmonogram 14.08 trzyma się; docs bez delay</li>
+        <li>Ultrafast: 750 tok/s, 14×, Cerebras, preview</li>
+        <li>Claude Tag: kontekst kanału, +~30%, Team/Enterprise</li>
+        <li>X: większy kod rankera + Under the Hood</li>
+      </ul>
+    </div>
+    <div class="down">
+      <h3>Nie mylić / nie spekulować</h3>
+      <ul>
+        <li>Computer History ≠ dostępne w PL (EEA/UK/CH out)</li>
+        <li>Ultrafast ≠ Fast z lipca (2,5×); brak ceny/GA</li>
+        <li>Payout X 14.08 to stary program (7–8.08), nie news dnia</li>
+        <li>Brak rollback auto mode — i brak lawiny reportów rano CEST</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="card" style="margin-top:12px">
+    <h2>Co warto dziś sprawdzić</h2>
+    <ol class="five">
+      <li>Nowa sesja Claude Code — status bar: auto mode on? Własny <code>defaultMode</code> → jednorazowy prompt? Enterprise bez zmian.</li>
+      <li>Opt-out: <code>~/.claude/settings.json</code> → <code>permissions.defaultMode</code> na <code>manual</code>, albo Shift+Tab.</li>
+      <li>Ultrafast — czy klucz API w ogóle widzi ten tier (preview, select customers).</li>
+      <li>Computer History — PL/EEA niedostępne, nie tracić czasu.</li>
+      <li>X: payout twórców 14.08; Grok 4.6 — 2× usage do ok. 19.08.</li>
+    </ol>
+    <div class="pills">
+      <span class="pill">Dzień D: auto mode default</span>
+      <span class="pill">Ultrafast = preview</span>
+      <span class="pill">Computer History ≠ PL</span>
+      <span class="pill">Tag = Team/Enterprise</span>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2>3 tweety gotowe do wrzucenia</h2>
+    <p class="meta">Angielski · &lt;280 znaków z linkiem · nie Computer History (EEA)</p>
+    <div class="tweet">Day D: Claude Code auto mode is now the default for new Pro/Max/Team sessions. Enterprise, API and Bedrock stay opt-in. Classifier tokens not billed since 7 Aug. Shift+Tab to switch.<br><a href="https://claude.com/blog/auto-mode-default-in-claude-code">https://claude.com/blog/auto-mode-default-in-claude-code</a></div>
+    <div class="tweet">OpenAI + Cerebras: Ultrafast for GPT-5.6 Sol — ~750 tok/s, ~14× Standard. Limited preview, select customers. Not the July Fast tier (2.5×). Price/GA not disclosed.<br><a href="https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai">https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai</a></div>
+    <div class="tweet">Claude Tag now reads the whole Slack channel — ~30% better at deciding when to jump in (or stay quiet). Four moves: inline, thread, route, silence. Extra context not in limits. Team + Enterprise.<br><a href="https://claude.com/blog/claude-tag-now-reads-even-more-of-the-room">https://claude.com/blog/claude-tag-now-reads-even-more-of-the-room</a></div>
+  </section>
+
+  <p class="footer">Raport na 14.08.2026, rano Europe/Warsaw · fakty oddzielone od spekulacji · productroot.io/ai</p>
+</div>
+</body>
+</html>
