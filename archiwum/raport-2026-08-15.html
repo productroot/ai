@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Risk Report Anthropic. Watermark + API. Grok 4.6 w Copilocie. · 15.08.2026</title>
+<style>
+:root {
+  --bg:#0b1220; --card:#111827; --card2:#1e293b; --line:#334155;
+  --txt:#e2e8f0; --mut:#94a3b8; --gold:#fbbf24;
+  --win:#4ade80; --risk:#f87171; --ok:#60a5fa; --soft:#0f172a;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--txt); line-height: 1.5;
+}
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 22px 72px; }
+.top {
+  display:flex; justify-content:space-between; align-items:flex-end; gap:16px;
+  margin-bottom: 14px; flex-wrap:wrap;
+}
+.kicker { color: var(--gold); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; }
+h1 { font-size: 34px; line-height: 1.12; letter-spacing: -.02em; }
+.sub { color: var(--mut); font-size: 15px; max-width: 760px; }
+.live {
+  background:#1e293b; border:1px solid var(--line); border-radius: 999px;
+  padding: 8px 14px; font-size: 13px; color: var(--ok); font-weight: 700; white-space: nowrap;
+}
+.tldr { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin: 22px 0 18px; }
+.fact {
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px;
+}
+.fact b { display:block; color: var(--gold); font-size: 11px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:4px; }
+.fact span { font-size: 14px; color: var(--txt); }
+.hero {
+  background: linear-gradient(180deg, #1e293b 0%, #111827 100%);
+  border: 1px solid var(--line); border-radius: 16px; overflow: hidden; margin-bottom: 14px;
+}
+.hero img { width: 100%; height: 300px; object-fit: contain; background:#0b1220; display: block; }
+.hero-body { padding: 18px 22px 22px; }
+.meta { color: var(--mut); font-size: 13px; margin-top: 4px; }
+.quote {
+  border-left: 3px solid var(--gold); padding: 8px 12px; margin: 10px 0;
+  color: #dbeafe; font-size: 14px; background: #0b1220; border-radius: 0 10px 10px 0;
+}
+.grid2 { display:grid; grid-template-columns: 1.15fr .85fr; gap: 12px; margin: 12px 0; }
+.grid2eq { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+.photos { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 12px; }
+.photos img { width:100%; height: 220px; object-fit:cover; border-radius:12px; border:1px solid var(--line); display:block; }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  padding: 16px 18px; margin-bottom: 0;
+}
+.card h2 { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.card h3 { font-size: 20px; margin: 0 0 6px; }
+.cap { color: var(--mut); font-size: 12px; margin-top: 4px; }
+.tag {
+  display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .08em;
+  text-transform: uppercase; padding: 3px 8px; border-radius: 999px; margin-right: 6px; vertical-align: middle;
+}
+.tag-ok { background: #052e16; color: #4ade80; }
+.tag-med { background: #1e3a5f; color: #93c5fd; }
+.tag-rum { background: #3f1d08; color: #fbbf24; }
+ul { margin: 8px 0 0 18px; font-size: 14px; }
+li { margin: 4px 0; }
+.item { margin: 8px 0; font-size: 14px; }
+.keys { display:flex; gap:8px; flex-wrap:wrap; margin: 10px 0; }
+.keys span { background:#0b1220; border:1px solid #334155; border-radius:10px; padding:6px 10px; font-size:13px; }
+.up { background: #052e16; border: 1px solid #166534; border-radius: 12px; padding: 12px 14px; }
+.down { background: #450a0a; border: 1px solid #991b1b; border-radius: 12px; padding: 12px 14px; }
+.up h3, .down h3 { font-size: 14px; margin-bottom: 4px; }
+.up h3 { color: #4ade80; }
+.down h3 { color: #f87171; }
+.five { margin: 4px 0 0 20px; }
+.five li { margin: 6px 0; }
+.pills { display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
+.pill { display:inline-block; background:#1e293b; border:1px solid var(--line); border-radius:999px; padding:5px 11px; font-size:12px; color:var(--mut); }
+.footer { color: var(--mut); font-size: 12px; margin-top: 22px; text-align: center; }
+.note { font-size:12px; color:var(--mut); margin-top:10px; }
+p { margin: 0; }
+p + p { margin-top: 8px; }
+a { color: var(--ok); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.tweet {
+  background: var(--soft); border: 1px solid var(--line); border-radius: 12px;
+  padding: 12px 14px; font-size: 14px; margin: 8px 0; color: var(--txt);
+}
+@media (max-width: 980px) {
+  .tldr, .grid2, .grid2eq, .photos { grid-template-columns: 1fr; }
+  h1 { font-size: 26px; }
+  .hero img { height: 200px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="kicker">Poranny przegląd AI · sobota 15.08.2026</div>
+      <h1>Risk Report Anthropic. Watermark + API. Grok 4.6 w Copilocie.</h1>
+      <p class="sub">Ostatnie ~24h · Europe/Warsaw · źródła pierwotne. Bez recyklingu wydania z 14.08.</p>
+    </div>
+    <div class="live">Risk Report · 14.08</div>
+  </div>
+
+  <section class="tldr" aria-label="TL;DR">
+    <div class="fact"><b>WAŻNE</b><span>Anthropic Risk Report August 2026 (publikacja 14.08, coverage 15.07): misalignment very low → low. Wewnętrzny Model 2 — nieco powyżej Mythos 5, brak planu release.</span></div>
+    <div class="fact"><b>NOWE / FOLLOW-UP</b><span>Watermark Claude: jak działa (wariant SynthID-Text) + detection API „soon”, nie live.</span></div>
+    <div class="fact"><b>NOWE</b><span>Grok 4.6 w GitHub Copilot (14.08), 8 powierzchni. Business/Enterprise off by default.</span></div>
+    <div class="fact"><b>TREND</b><span>Claude Code v2.1.233 — patch: GitLab MR URL, fix wycieku NTLM, todo tools off na nowszych modelach.</span></div>
+    <div class="fact"><b>TREND</b><span>OpenAI: existing individual-user sync wyłączone 14.08. Admin-managed sync bez zmian.</span></div>
+    <div class="fact"><b>SOBOTA</b><span>Cienkie X/Reddit. Dziś liczą się źródła pierwotne, nie recykling wczorajszych wątków.</span></div>
+  </section>
+
+  <section class="hero">
+    <img src="img/hero.svg" alt="Anthropic Risk Report August 2026 — Responsible Scaling Policy">
+    <div class="hero-body">
+      <div class="kicker">WAŻNE · Anthropic · Risk Report</div>
+      <h3>Misalignment: very low → low. Model 2 wewnątrz, bez planu release</h3>
+      <div class="meta">Publikacja 14.08.2026 · coverage date 15.07.2026 · RSP v3.4 · rano Europe/Warsaw</div>
+      <div class="keys">
+        <span>Mythos 5 + Model 2</span><span>misalignment Low</span><span>Automated R&amp;D Low</span><span>CB Low</span>
+      </div>
+      <p><span class="tag tag-med">WAŻNE</span> Drugi publiczny Risk Report Anthropic. Ocena misalignment w high-stakes settings idzie w górę z „very low” do „low” — przez większą niepewność po incydentach ujawnionych przy ewaluacjach cybersecurity, nie przez nowy próg RSP.</p>
+      <p>Najczęściej używane wewnętrznie: Mythos 5 i Model 2. Model 2 jest nieco bardziej zdolny niż Mythos 5; Anthropic nie ma planu zewnętrznego release i nie przeprowadził pełnego zestawu ocen predeployment. Automated R&amp;D: Claude pisze dużą większość mergowanego kodu produkcyjnego; przyspieszenie istotne, ale jeszcze nie 2×; ryzyko Low. CB Low, ale wyżej niż poprzednio przez lukę w vendor human-feedback (zaradzona, bez wpływu na klientów).</p>
+      <p>Po dacie coverage: UK AISI ewaluowało Mythos 5 z wyłączonymi safeguardami i z internetem — śledztwo trwa, Anthropic nie przejrzł jeszcze transkryptów.</p>
+      <p class="note">Źródła: <a href="https://www.anthropic.com/aug-2026-risk-report">anthropic.com/aug-2026-risk-report</a> · <a href="https://www.anthropic.com/responsible-scaling-policy">Responsible Scaling Policy</a></p>
+    </div>
+  </section>
+
+  <div class="photos">
+    <div>
+      <img src="img/watermark.svg" alt="How Claude's text watermark works — SynthID-Text">
+      <div class="cap">Watermark Claude · wariant SynthID-Text · detection API soon, nie live</div>
+    </div>
+    <div>
+      <img src="img/copilot.svg" alt="Grok 4.6 now available in GitHub Copilot">
+      <div class="cap">Grok 4.6 w Copilocie · 8 powierzchni · Biz/Ent off by default · dystrybucja, nie nowy model</div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>WAŻNE · Anthropic</h2>
+      <h3>Risk Report August 2026 — co jest w raporcie</h3>
+      <p><span class="tag tag-med">WAŻNE</span> Coverage do 15.07.2026 (w oknie 30 dni od publikacji, RSP v3.4). To ocena działalności Anthropic jako całości, nie karta jednego modelu.</p>
+      <ul>
+        <li><b>Misalignment:</b> Low (było very low). Powód podany w raporcie: większa niepewność po incydentach związanych z zachowaniem modelu w ewaluacjach cybersecurity.</li>
+        <li><b>Mythos 5 + Model 2</b> — najczęściej używane wewnętrznie (coding, data generation, agentic). Mythos 5: Project Glasswing + Fable 5 z dodatkowymi safeguardami.</li>
+        <li><b>Model 2:</b> nieco bardziej zdolny niż Mythos 5; brak planu zewnętrznego release; niepełne oceny predeployment — niższa pewność co do capability.</li>
+        <li><b>Automated R&amp;D:</b> Claude pisze dużą większość mergowanego kodu produkcyjnego. Przyspieszenie istotne, ale jeszcze nie 2×. Ryzyko Low; ewaluacje task-based „nasycone”.</li>
+        <li><b>CB:</b> Low, ale wyżej niż poprzednio przez lukę: cały ruch vendor human-feedback bez blocking biological classifiers. Luka zaradzona; przegląd nie znalazł misuse; brak wpływu na klientów.</li>
+        <li><b>Po coverage:</b> UK AISI — Mythos 5, safeguardy off + internet. Śledztwo trwa. Anthropic nie przejrzł jeszcze transkryptów.</li>
+      </ul>
+      <div class="quote">Raport: Model 2 „is somewhat more capable than Mythos 5. We do not currently have plans to release this model externally, and have not run all of our typical suite of predeployment assessments.”</div>
+      <p class="note">Fakt: oceny Low / very low i opis Model 2. Spekulacja: Model 2 = następny Fable/Mythos — tego w raporcie nie ma. Nie cytować 80%/8× — to esej z 4.06, nie ten raport.</p>
+    </section>
+
+    <section class="card">
+      <h2>NOWE · follow-up · Claude</h2>
+      <h3>Watermark: jak działa + API „soon”</h3>
+      <p><span class="tag tag-ok">NOWE</span> 14.08 Anthropic opisał mechanizm — to follow-up do Help Center, nie recykling wczorajszej zapowiedzi. Wariant SynthID-Text (DeepMind, Nature 2024): zmienia źródło losowości przy słowach o niskiej stawce. Nic nie jest dopisywane do tekstu.</p>
+      <ul>
+        <li>Brak ukrytych znaków, brak extra tokenów, brak PII — nie da się namierzyć osoby, organizacji ani czatu.</li>
+        <li>Globalnie od startu: nie ma trwałego ograniczenia tylko do UE.</li>
+        <li>Detection API — „soon”, nie jest live.</li>
+        <li>Pliki (png/jpg/svg): C2PA w metadanych, nie watermark pikselowy.</li>
+        <li>Słabszy na krótkim tekście, kodzie i faktach; ciężki rewrite zdejmuje znak.</li>
+        <li>Modele sprzed 2.08: rollout w nadchodzących miesiącach (okres przejściowy EU).</li>
+      </ul>
+      <p class="note">Źródło: <a href="https://www.anthropic.com/news/claude-text-watermark">anthropic.com/news/claude-text-watermark</a></p>
+    </section>
+  </div>
+
+  <div class="grid2eq">
+    <section class="card">
+      <h2>NOWE · xAI + GitHub</h2>
+      <h3>Grok 4.6 w GitHub Copilot — 8 powierzchni</h3>
+      <p><span class="tag tag-ok">NOWE</span> 14.08. To dystrybucja, nie nowy model — launch Grok 4.6 był 12.08. API bez zmian: $2 / $6 za milion tokenów (input/output).</p>
+      <p>SKU: Pro, Pro+, Max, Business, Enterprise. Model picker: VS Code, Visual Studio, Copilot CLI, cloud agent, Copilot app, JetBrains, Xcode, Eclipse. Rollout stopniowy.</p>
+      <p>Business i Enterprise: admin musi włączyć politykę — off by default. Billing: provider list pricing (usage-based).</p>
+      <p class="note">Źródła: <a href="https://x.ai/news/grok-4-6-github-copilot">x.ai/news/grok-4-6-github-copilot</a> · <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/">GitHub Changelog, 14.08</a></p>
+    </section>
+
+    <section class="card">
+      <h2>TREND · patch + changelog</h2>
+      <h3>Claude Code 2.1.233 · OpenAI sync off</h3>
+      <p class="item"><span class="tag tag-ok">PATCH</span> <b>Claude Code v2.1.233</b> (14.08). URL-e merge requestów GitLab; fix wektora wycieku NTLM (prefiks NT <code>\??\</code>); narzędzia todo/task wyłączone na Opus 4.8, Sonnet 5, Fable 5, Mythos 5 i nowszych (<code>CLAUDE_CODE_ENABLE_TODO_TOOLS=1</code> przywraca); Windows: fix auto mode, które zatrzymywało się na zwykłym <code>cd &amp;&amp; &gt; file</code> (regresja 2.1.232). To nie jest relans defaultu auto mode.</p>
+      <p class="item"><span class="tag tag-ok">CHANGELOG</span> <b>OpenAI, 14.08.</b> Existing individual-user sync wyłączone. Admin-managed sync bez zmian.</p>
+      <p class="note">Źródła: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.233">claude-code v2.1.233</a> · <a href="https://openai.com/products/release-notes/">openai.com/products/release-notes</a></p>
+    </section>
+  </div>
+
+  <div class="grid2eq">
+    <div class="up">
+      <h3>Fakty dnia</h3>
+      <ul>
+        <li>Risk Report: misalignment Low (było very low); coverage 15.07</li>
+        <li>Model 2 wewnątrz, nieco powyżej Mythos 5, brak planu release</li>
+        <li>Watermark: SynthID-Text + detection API soon (nie live)</li>
+        <li>Grok 4.6 w Copilocie, 8 powierzchni; Biz/Ent off by default</li>
+        <li>Claude Code 2.1.233 — patch, nie relans auto mode</li>
+        <li>OpenAI individual-user sync off 14.08</li>
+      </ul>
+    </div>
+    <div class="down">
+      <h3>Nie mylić / nie spekulować</h3>
+      <ul>
+        <li>Nie cytować 80%/8× — to esej z 4.06, nie ten Risk Report</li>
+        <li>Model 2 ≠ zapowiedź next Fable/Mythos — raport tego nie mówi</li>
+        <li>Detection API watermarku nie jest live</li>
+        <li>Grok 4.6 w Copilocie = dystrybucja, nie nowy model (launch 12.08)</li>
+        <li>2.1.233 nie wraca z defaultem auto mode — to fix Windows</li>
+        <li>Sobota: cienkie X/Reddit, nie recykling 14.08</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="card" style="margin-top:12px">
+    <h2>Co warto dziś sprawdzić</h2>
+    <ol class="five">
+      <li>Watermark detection API — czy pojawiły się docs? (Anthropic: „soon”, nie live.)</li>
+      <li>Grok 4.6 w pickerze Copilota; na Business/Enterprise: polityka admina (off by default).</li>
+      <li>Ustawienia connectorów Enterprise po odcięciu individual-user sync (14.08).</li>
+      <li><code>claude --version</code> → 2.1.233.</li>
+      <li>Follow-up incydentu AISI (Mythos 5, safeguardy off + internet) — transkrypty jeszcze nieprzejrzane przez Anthropic.</li>
+    </ol>
+    <div class="pills">
+      <span class="pill">Risk Report · coverage 15.07</span>
+      <span class="pill">Watermark API ≠ live</span>
+      <span class="pill">Grok 4.6 = dystrybucja</span>
+      <span class="pill">2.1.233 = patch</span>
+      <span class="pill">Sobota: cienkie X</span>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2>3 tweety gotowe do wrzucenia</h2>
+    <p class="meta">Angielski · &lt;280 znaków z linkiem</p>
+    <div class="tweet">Anthropic Risk Report (Aug 2026, coverage 15 Jul): misalignment raised very low → low after cybersecurity eval incidents. Internal Model 2 is somewhat more capable than Mythos 5; no external release plan. Automated R&amp;D risk: Low.<br><a href="https://www.anthropic.com/aug-2026-risk-report">https://www.anthropic.com/aug-2026-risk-report</a></div>
+    <div class="tweet">How Claude's text watermark works: a SynthID-Text variant. It changes randomness on low-stakes words — no hidden chars, no extra tokens, no PII. Global (no durable EU-only scope). Detection API coming soon, not live yet.<br><a href="https://www.anthropic.com/news/claude-text-watermark">https://www.anthropic.com/news/claude-text-watermark</a></div>
+    <div class="tweet">Grok 4.6 is now in GitHub Copilot: VS Code, VS, CLI, cloud agent, Copilot app, JetBrains, Xcode, Eclipse. Pro/Pro+/Max/Biz/Ent. Biz/Ent off by default — admin must enable. Distribution, not a new model (launch was 12 Aug).<br><a href="https://x.ai/news/grok-4-6-github-copilot">https://x.ai/news/grok-4-6-github-copilot</a></div>
+  </section>
+
+  <p class="footer">Raport na 15.08.2026, rano Europe/Warsaw · fakty oddzielone od spekulacji · productroot.io/ai</p>
+</div>
+</body>
+</html>
