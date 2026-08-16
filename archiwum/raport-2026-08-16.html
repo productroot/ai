@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Q2 Anthropic, DeepSeek drożeje dziś, gadżety z Kickstartera. · 16.08.2026 · wydanie rozszerzone</title>
+<title>SpaceX zamyka Cursor. DeepSeek drożeje dziś. Q2 Anthropic. · 16.08.2026 · wydanie rozszerzone</title>
 <style>
 :root {
   --bg:#0b1220; --card:#111827; --card2:#1e293b; --line:#334155;
-  --txt:#e2e8f0; --mut:#94a3b8; --gold:#fbbf24;
+  --txt:#e2e8f0; --mut:#94a3b8; --pl:#1d4ed8; --gold:#fbbf24;
   --win:#4ade80; --risk:#f87171; --ok:#60a5fa; --soft:#0f172a;
 }
 * { box-sizing:border-box; margin:0; padding:0; }
@@ -27,6 +27,12 @@ h1 { font-size: 34px; line-height: 1.12; letter-spacing: -.02em; }
   background:#1e293b; border:1px solid var(--line); border-radius: 999px;
   padding: 8px 14px; font-size: 13px; color: var(--ok); font-weight: 700; white-space: nowrap;
 }
+.tldr { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin: 22px 0 18px; }
+.fact {
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px;
+}
+.fact b { display:block; color: var(--gold); font-size: 11px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:4px; }
+.fact span { font-size: 14px; color: var(--txt); }
 .hero {
   background: linear-gradient(180deg, #1e293b 0%, #111827 100%);
   border: 1px solid var(--line); border-radius: 16px; overflow: hidden; margin-bottom: 14px;
@@ -45,9 +51,10 @@ h1 { font-size: 34px; line-height: 1.12; letter-spacing: -.02em; }
 .photos img { width:100%; height: 220px; object-fit:cover; border-radius:12px; border:1px solid var(--line); display:block; }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: 16px;
-  padding: 16px 18px; margin-bottom: 0;
+  padding: 16px 18px; margin-bottom:12px;
 }
-.card h3 { font-size: 18px; margin: 0 0 6px; }
+.card h2 { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.card h3 { font-size: 20px; margin: 0 0 6px; }
 .cap { color: var(--mut); font-size: 12px; margin-top: 4px; }
 .tag {
   display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .08em;
@@ -57,16 +64,21 @@ h1 { font-size: 34px; line-height: 1.12; letter-spacing: -.02em; }
 .tag-med { background: #1e3a5f; color: #93c5fd; }
 .tag-rum { background: #3f1d08; color: #fbbf24; }
 .tag-out { background: #3f1212; color: #fca5a5; }
-.tag-in { background: #052e16; color: #86efac; }
 ul { margin: 8px 0 0 18px; font-size: 14px; }
-li { margin: 6px 0; }
+li { margin: 4px 0; }
+.item { margin: 8px 0; font-size: 14px; }
 .keys { display:flex; gap:8px; flex-wrap:wrap; margin: 10px 0; }
 .keys span { background:#0b1220; border:1px solid #334155; border-radius:10px; padding:6px 10px; font-size:13px; }
+.up { background: #052e16; border: 1px solid #166534; border-radius: 12px; padding: 12px 14px; }
+.down { background: #450a0a; border: 1px solid #991b1b; border-radius: 12px; padding: 12px 14px; }
+.up h3, .down h3 { font-size: 14px; margin-bottom: 4px; }
+.up h3 { color: #4ade80; }
+.down h3 { color: #f87171; }
 .five { margin: 4px 0 0 20px; }
-.five li { margin: 8px 0; }
+.five li { margin: 6px 0; }
 .pills { display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
 .pill { display:inline-block; background:#1e293b; border:1px solid var(--line); border-radius:999px; padding:5px 11px; font-size:12px; color:var(--mut); }
-.footer { color: var(--mut); font-size: 12px; margin-top: 28px; text-align: left; line-height: 1.8; }
+.footer { color: var(--mut); font-size: 12px; margin-top: 22px; text-align: left; line-height: 1.85; }
 .footer a { margin-right: 12px; display: inline-block; }
 .note { font-size:12px; color:var(--mut); margin-top:10px; }
 p { margin: 0; }
@@ -77,17 +89,14 @@ a:hover { text-decoration: underline; }
   background: var(--soft); border: 1px solid var(--line); border-radius: 12px;
   padding: 12px 14px; font-size: 14px; margin: 8px 0; color: var(--txt);
 }
-.tldr-list { margin: 8px 0 0 22px; font-size: 15px; }
-.tldr-list li { margin: 8px 0; }
 .sources { margin-top:10px; font-size:12px; color:var(--mut); }
 .sources a { margin-right:10px; }
 .sec { margin: 22px 0 8px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); }
-.date { color: var(--mut); font-size: 12px; margin-top: 6px; }
 @media (max-width: 980px) {
-  .grid2, .grid2eq, .grid3, .photos { grid-template-columns: 1fr; }
   h1 { font-size: 26px; }
   .hero img { height: 200px; }
 }
+@media (max-width:800px) { .tldr,.grid2,.grid2eq,.photos { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -95,428 +104,481 @@ a:hover { text-decoration: underline; }
   <div class="top">
     <div>
       <div class="kicker">Poranny przegląd AI · niedziela 16.08.2026 · wydanie rozszerzone</div>
-      <h1>Q2 Anthropic, DeepSeek drożeje dziś, gadżety z Kickstartera.</h1>
-      <p class="sub">Szeroki sweep · laby + media + HN/Reddit + narzędzia + crowdfunding. Cisza oficjalnych blogów ≠ pusta strona.</p>
+      <h1>SpaceX zamyka Cursor. DeepSeek drożeje dziś. Q2 Anthropic.</h1>
+      <p class="sub">Szeroki sweep · laby + media + HN/Reddit/X + narzędzia + crowdfunding. Cisza oficjalnych blogów ≠ pusta strona.</p>
     </div>
     <div class="live">Dziś 18:00 CEST · DeepSeek peak/off-peak</div>
   </div>
+
   <h2 class="sec">TL;DR</h2>
-  <section class="card" aria-label="TL;DR">
-    <ul class="tldr-list">
-      <li><span class="tag tag-med">WAŻNE</span> biznes: Anthropic Q2 &gt;11,5 mld USD (Bloomberg 14.08 21:08 UTC / CNBC 15.08).</li>
-      <li><span class="tag tag-med">WAŻNE</span> dziś: DeepSeek API peak/off-peak od 16:00 UTC / 18:00 CEST.</li>
-      <li><span class="tag tag-ok">NOWE</span> narzędzie: DeepSeek Harness (OSS, everything-is-a-plugin) — The Register 14.08.</li>
-      <li><span class="tag tag-rum">KONTEKST</span> Gemini 3.7 Flash (13.08) $0.75/$3.75 do 31.12 — nadal aktualna cena.</li>
-      <li><span class="tag tag-ok">TREND</span> watermark — TechCrunch 15.08 recap; BI: Anthropic nie widzi wzrostu rezygnacji.</li>
-      <li><span class="tag tag-rum">HN</span> wątek Risk Report PDF.</li>
-      <li><span class="tag tag-rum">GADŻETY</span> MemoMind One ~$1.1M, LUMISTAR CARRY ~$1.2M, Lumi AI Dock — crowdfunding.</li>
-      <li><span class="tag tag-out">PUSTE</span> dziś: nowe posty anthropic.com/news, x.ai/news, Claude Code nadal v2.1.233.</li>
-    </ul>
+  <section class="tldr" aria-label="TL;DR">
+    <div class="fact"><b>WAŻNE · DEAL</b><span>SpaceX zamknął przejęcie Cursor (blog Cursor 14.08, TechCrunch 15.08). Transakcja all-stock, wycena rzędu ~$60B.</span></div>
+    <div class="fact"><b>DZIŚ · CENNIK</b><span>DeepSeek peak/off-peak wchodzi dziś 16:00 UTC / 18:00 CEST. To podwyżka względem starej stawki płaskiej, nie zniżka.</span></div>
+    <div class="fact"><b>BIZNES</b><span>Anthropic Q2 &gt;$11.5B — Bloomberg 14.08 21:08 UTC / CNBC 15.08. Dokumenty inwestorskie, nie blog firmy.</span></div>
+    <div class="fact"><b>PRODUKT</b><span>Gemini 3.7 Flash w Search AI Mode (The Verge 14.08). Intro $0.75/$3.75 do 31.12.2026.</span></div>
+    <div class="fact"><b>FOLLOW-UP</b><span>Watermark Claude: Detection API nadal „soon”. Business Insider — brak wzrostowego trendu rezygnacji.</span></div>
+    <div class="fact"><b>GEOPOLITYKA</b><span>Pax Silica — relacje 14.08 (Reuters / CNA / The Next Web): list USA do ~35 krajów ws. koalicji AI wobec Chin.</span></div>
+    <div class="fact"><b>OSS</b><span>Hugging Face Summer 2026: Qwen ma 151k pochodnych. Stan otwartych modeli, nie nowy checkpoint.</span></div>
+    <div class="fact"><b>SPOŁECZNOŚĆ</b><span>HN Opus 5 ~947 pkt; Port22 startuje dziś na Product Hunt; Needle 2 na GH trending.</span></div>
   </section>
+
   <section class="hero">
-    <img src="img/hero.svg" alt="Anthropic newsroom — Q2 2026 w dokumentach inwestorskich">
+    <img src="img/hero.svg" alt="SpaceX zamyka przejęcie Cursor — all-stock, ok. 60 mld USD">
     <div class="hero-body">
-      <div class="kicker">WAŻNE · Anthropic · Q2 · dokumenty inwestorskie</div>
-      <h3>Przychód Q2 2026 &gt;11,5 mld USD. Pierwszy dodatni adjusted operating income</h3>
-      <div class="meta">Bloomberg 14.08.2026, 21:08 UTC · CNBC 15.08.2026 · preliminary · nie blog firmy</div>
+      <div class="kicker">WAŻNE · SpaceX × Cursor · zamknięte</div>
+      <h3>SpaceX oficjalnie zamyka przejęcie Cursor</h3>
+      <div class="meta">Cursor blog 14.08.2026 · TechCrunch 15.08.2026 · all-stock · ~$60B</div>
       <div class="keys">
-        <span>&gt;$11,5 mld vs $787 mln YoY</span><span>$4,73 mld w Q1</span><span>~14× YoY</span><span>adj. op. income &gt;0</span>
+        <span>all-stock</span><span>~$60B</span><span>blog 14.08</span><span>TC close 15.08</span>
       </div>
-      <p>Szeroki sweep niedzieli: laby milczą, ale media, cenniki API, OSS i Kickstarter nie. DeepSeek wchodzi dziś w peak/off-peak; Gemini 3.7 Flash zostaje tanim workhorsem do końca roku.</p>
+      <p><span class="tag tag-med">ZAMKNIĘTE</span> Cursor potwierdził dołączenie do SpaceX. TechCrunch 15.08: transakcja jest oficjalnie zamknięta. 9to5Mac 14.08 opisywał deal jako zakup konkurenta Claude Code i OpenAI Codex.</p>
+      <p>To nie plotka weekendu i nie „letter of intent”. Primary: <a href="https://cursor.com/blog/joining-spacex">cursor.com/blog/joining-spacex</a>. Cisza sobotnio-niedzielnych blogów labów nie kasuje tego faktu.</p>
+      <div class="sources">
+        <a href="https://cursor.com/blog/joining-spacex">Cursor blog</a>
+        <a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/">TechCrunch</a>
+        <a href="https://9to5mac.com/2026/08/14/spacex-lands-deal-to-likely-purchase-claude-code-and-openai-codex-competitor/">9to5Mac</a>
+      </div>
     </div>
   </section>
+
+  <h2 class="sec">Produkty i modele</h2>
+  <div class="grid2">
+    <section class="card">
+      <span class="tag tag-med">DZIŚ 18:00 CEST</span>
+      <h3>DeepSeek V4: peak/off-peak od 16:00 UTC</h3>
+      <p>Cutover dziś 16.08 o 16:00 UTC / 18:00 CEST. Okna peak: 01:00–04:00 oraz 06:00–10:00 UTC. Off-peak = połowa <em>nowego</em> peaku — to nie jest zniżka względem starej stawki płaskiej.</p>
+      <p>V4-Flash output: $0.28 → $0.66 / $1.32. V4-Pro: $0.87 → $1.98 / $3.96. Computerworld: część stawek V4 rośnie ponad 10× przy napiętej pojemności.</p>
+      <p class="note">Jeśli porównujesz $/M z innymi modelami — patrz też sygnał Tibo (OpenAI) w sekcji społeczności: token ≠ token.</p>
+      <div class="sources">
+        <a href="https://api-docs.deepseek.com/updates/">DeepSeek Updates</a>
+        <a href="https://api-docs.deepseek.com/quick_start/pricing">DeepSeek Pricing</a>
+        <a href="https://www.computerworld.com/article/4209468/deepseek-raises-some-v4-prices-by-more-than-10x-as-ai-demand-strains-capacity-2.html">Computerworld</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-ok">SEARCH</span>
+      <h3>Gemini 3.7 Flash w Search AI Mode</h3>
+      <p>The Verge 14.08, 18:31 UTC: nowy model Gemini jest już w AI Mode w Search. Oficjalny blog Google + karta DeepMind.</p>
+      <p>Intro $0.75 / $3.75 do 31.12.2026 — nadal aktualny tani default na coding i agentów, dopóki trwa intro.</p>
+      <p class="note">To nie jest nowość niedzieli z bloga labów; to nadal żywy produkt w Search i w cenniku.</p>
+      <div class="sources">
+        <a href="https://www.theverge.com/tech/980532/the-new-gemini-model-is-now-in-ai-mode-for-search">The Verge</a>
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google Blog</a>
+        <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/">DeepMind model card</a>
+      </div>
+    </section>
+  </div>
+  <section class="card">
+    <span class="tag tag-out">PUSTE LABY</span>
+    <h3>Brak nowych postów produktowych Anthropic / OpenAI / xAI (sob–niedz.)</h3>
+    <p>Od soboty: zero nowych oficjalnych postów produktowych. Claude Code nadal v2.1.233 — sprawdź <code>claude --version</code> i tag na GitHubie.</p>
+    <p>Cisza oficjalnych blogów ≠ pusta strona. Reszta wydania to media, cenniki, OSS, społeczność i crowdfunding.</p>
+    <div class="sources">
+      <a href="https://github.com/anthropics/claude-code/releases">Claude Code releases</a>
+      <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.233">v2.1.233</a>
+      <a href="https://code.claude.com/docs/en/changelog">Claude Code changelog</a>
+    </div>
+  </section>
+
+  <h2 class="sec">Laby i research</h2>
   <div class="photos">
     <div>
-      <img src="img/watermark.svg" alt="Claude text watermark — follow-up, nie recykling mechaniki">
-      <div class="cap">Watermark · follow-up 15.08 · BI: brak wzrostowego trendu rezygnacji</div>
+      <img src="img/watermark.svg" alt="Claude text watermark — follow-up, Detection API nadal soon">
+      <div class="cap">Watermark · follow-up 15.08 · BI: brak wzrostowego trendu rezygnacji · Detection API still soon</div>
     </div>
     <div>
       <section class="card" style="height:100%">
-        <span class="tag tag-ok">TREND</span>
-        <h3>Watermark: recap soboty, nie recykling SynthID</h3>
-        <p>TechCrunch 15.08 streszcza mechanikę watermarku Claude — produkt już był w wydaniu piątku. Tu tylko follow-up.</p>
-        <p>Nowe: Anthropic on the record dla Business Insider — nie widzi wzrostowego trendu rezygnacji. Anegdoty o cancelu na X to nie churn.</p>
-        <p class="date">15.08.2026 · follow-up, nie nowy produkt</p>
+        <span class="tag tag-ok">FOLLOW-UP</span>
+        <h3>Watermark: bez recyklingu SynthID</h3>
+        <p>Nie przerabiamy mechaniki z piątku. TechCrunch 15.08 i The Register 15.08 streszczają schemat (m.in. „inconsequential words”). Tu tylko follow-up.</p>
+        <p>Nowe: Anthropic on the record dla Business Insider — nie widzi wzrostowego trendu rezygnacji. Detection API nadal „soon”, nie live.</p>
         <div class="sources">
           <a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/">TechCrunch</a>
+          <a href="https://www.theregister.com/ai-and-ml/2026/08/15/anthropic-says-text-watermarking-scheme-relies-on-inconsequential-words/5288156">The Register</a>
           <a href="https://www.businessinsider.com/anthropic-reveals-more-about-ai-watermarking-plans-amid-eu-regulations-2026-8">Business Insider</a>
           <a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic</a>
         </div>
       </section>
     </div>
   </div>
-  <h2 class="sec">Produkty i modele</h2>
+  <section class="card">
+    <span class="tag tag-med">DECODER 16.08</span>
+    <h3>Klasyfikatory bio wyłączone ~maj 2025–kwiecień 2026 na contractor HF</h3>
+    <p>The Decoder 16.08: filtry bio-weapons były wyłączone przez niemal rok na ścieżce contractor human feedback — ok. 133 mln czatów. The Next Web i Aug 2026 Risk Report potwierdzają lukę w human-feedback.</p>
+    <p>Śledztwo: nie stwierdzono nadużyć. To jest lead labów niedzieli — <strong>nie</strong> zaczynać od piątkowego ratingu misalignment.</p>
+    <div class="quote">Fakt: downtime klasyfikatorów + 133M requestów + brak stwierdzonego abuse. Spekulacja: skala ryzyka — nie nadawać, skoro śledztwo nie znalazło nadużyć.</div>
+    <div class="sources">
+      <a href="https://the-decoder.com/anthropics-bio-weapons-filter-was-down-for-nearly-a-year-exposing-133-million-requests/">The Decoder</a>
+      <a href="https://thenextweb.com/news/anthropic-risk-report-bio-classifiers-human-feedback-gap">The Next Web</a>
+      <a href="https://www.anthropic.com/aug-2026-risk-report">Aug 2026 Risk Report</a>
+    </div>
+  </section>
+
+  <h2 class="sec">Biznes</h2>
   <div class="grid2">
     <section class="card">
-      <span class="tag tag-med">DZIŚ</span>
-      <h3>DeepSeek-V4-Pro GA + peak/off-peak od 16:00 UTC</h3>
-      <p>Oficjalny changelog z 13.08; ceny wchodzą live dziś 16.08 o 16:00 UTC / 18:00 CEST. Peak: 01:00–04:00 oraz 06:00–10:00 UTC. Off-peak = połowa stawki.</p>
-      <p>V4-Pro peak: cache hit $0.044 / miss $1.32 / out $3.96 za 1M tokenów. Off-peak: $0.022 / $0.66 / $1.98. Responses API + Codex.</p>
-      <p class="date">Changelog 13.08.2026 · ceny live 16.08.2026, 16:00 UTC</p>
+      <span class="tag tag-med">ZAMKNIĘTE</span>
+      <h3>SpaceX × Cursor — close, nie plotka</h3>
+      <p>Primary: blog Cursor 14.08. TechCrunch 15.08: SpaceX oficjalnie zamyka akwizycję. Transakcja all-stock, wycena rzędu ~$60B.</p>
+      <p>9to5Mac 14.08 ramował deal jako zakup konkurenta Claude Code i Codex. To tło produktowe, nie osobny close.</p>
       <div class="sources">
-        <a href="https://api-docs.deepseek.com/updates/">DeepSeek Updates</a>
-        <a href="https://api-docs.deepseek.com/quick_start/pricing">DeepSeek Pricing</a>
+        <a href="https://cursor.com/blog/joining-spacex">Cursor blog</a>
+        <a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/">TechCrunch</a>
+        <a href="https://9to5mac.com/2026/08/14/spacex-lands-deal-to-likely-purchase-claude-code-and-openai-codex-competitor/">9to5Mac</a>
       </div>
     </section>
     <section class="card">
-      <span class="tag tag-rum">KONTEKST</span>
-      <h3>Gemini 3.7 Flash — nadal żywy cennik workhorsa</h3>
-      <p>Wprowadzony 13.08. Intro $0.75 / $3.75 do 31.12.2026, potem $1.50 / $7.50. Coding i agenci.</p>
-      <p>To nie jest nowość weekendu — to nadal aktualna, tania domyślna cena na coding/agent default, dopóki nie skończy się intro.</p>
-      <p class="date">13.08.2026 · intro do 31.12.2026</p>
+      <span class="tag tag-med">Q2</span>
+      <h3>Anthropic: przychód Q2 &gt;$11.5B</h3>
+      <p>Bloomberg 14.08, 21:08 UTC i CNBC 15.08: preliminary Q2 powyżej 11,5 mld USD. Źródło: dokumenty inwestorskie, nie oficjalny blog.</p>
+      <p>Wyceny IPO rzędu 1–2 bln USD krążą w coverage. <strong>To spekulacja, nie fakt</strong> — nie podawać jako potwierdzone.</p>
+      <div class="quote">Nie cytować $1–2T IPO / jesień jako potwierdzone. Q2 &gt;$11.5B = preliminary z Bloomberg/CNBC.</div>
       <div class="sources">
-        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google Blog</a>
-        <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/">DeepMind</a>
+        <a href="https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter">Bloomberg</a>
+        <a href="https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html">CNBC</a>
       </div>
     </section>
   </div>
-  <section class="card" style="margin-top:12px">
-    <span class="tag tag-out">PUSTE</span>
-    <h3>Brak nowych postów produktowych Anthropic / OpenAI / xAI (sob–niedz.)</h3>
-    <p>Od soboty rano: zero nowych oficjalnych postów produktowych na anthropic.com/news, x.ai/news. Claude Code nadal v2.1.233.</p>
-    <p>Cisza oficjalnych blogów nie znaczy pustej strony — reszta wydania to media, cenniki, OSS, społeczność i crowdfunding.</p>
-    <p class="date">stan na 16.08.2026</p>
-    <div class="sources">
-      <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.233">GitHub</a>
-      <a href="https://www.anthropic.com/news">Anthropic News</a>
-      <a href="https://x.ai/news">xAI News</a>
-    </div>
-  </section>
-  <h2 class="sec">Laby i research</h2>
   <div class="grid2eq">
     <section class="card">
-      <span class="tag tag-ok">FOLLOW-UP</span>
-      <h3>Watermark Claude — sobotni recap, bez SynthID</h3>
-      <p>Nie przerabiamy mechaniki z piątku. TechCrunch 15.08 recap + BI on the record: brak wzrostowego trendu rezygnacji.</p>
-      <p>Oficjalny FAQ @AnthropicAI z ~14.08 19:16 UTC nadal jest kanonicznym postem, nie nowością weekendu.</p>
-      <p class="date">14–15.08.2026</p>
+      <span class="tag tag-rum">14.08</span>
+      <h3>Pax Silica</h3>
+      <p>Channel News Asia i The Next Web 14.08: USA rozesłały list do ok. 35 krajów w sprawie koalicji AI wobec Chin (Pax Silica / WAICO). Relacje z 14.08, w tym Reuters w coverage.</p>
+      <p>To sygnał geopolityczny weekendu, nie produkt labów.</p>
       <div class="sources">
-        <a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic</a>
-        <a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/">TechCrunch</a>
-        <a href="https://www.businessinsider.com/anthropic-reveals-more-about-ai-watermarking-plans-amid-eu-regulations-2026-8">Business Insider</a>
-        <a href="https://x.com/AnthropicAI/status/2088343978873966687">X / AnthropicAI</a>
+        <a href="https://www.channelnewsasia.com/east-asia/us-china-ai-race-pax-silica-waico-6320671">Channel News Asia</a>
+        <a href="https://thenextweb.com/news/pax-silica-us-letter-35-countries-china-ai-coalition">The Next Web</a>
       </div>
     </section>
     <section class="card">
-      <span class="tag tag-rum">PIĄTEK</span>
-      <h3>Risk Report — nadal primary, jeśli cytujesz HN</h3>
-      <p>Aug 2026 Risk Report pozostaje piątkowym primary. Wątek HN żyje; nie ma nowego weekendu z labów.</p>
-      <p>Oficjalny post @AnthropicAI ~14.08 18:00 UTC. Detection API nadal „soon”, nie live.</p>
-      <p class="date">14.08.2026 · HN nadal aktywny</p>
+      <span class="tag tag-out">SPRAWA</span>
+      <h3>Pozew Jane Doe 4 vs Grok — zarzuty nieudowodnione</h3>
+      <p>TechCrunch 15.08: powódka (Jane Doe 4) zarzuca, że ojczym użył Grok do przekształcenia zdjęcia z dzieciństwa. To pozew — zarzuty są nieudowodnione.</p>
+      <p>Tylko fakt prawny wysokiego poziomu. Bez opisu obrazów, bez recyklingu szczegółów.</p>
       <div class="sources">
-        <a href="https://www.anthropic.com/aug-2026-risk-report">Anthropic</a>
-        <a href="https://news.ycombinator.com/item?id=49303540">Hacker News</a>
-        <a href="https://x.com/AnthropicAI/status/2088324824863236248">X / AnthropicAI</a>
+        <a href="https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/">TechCrunch</a>
       </div>
     </section>
   </div>
-  <h2 class="sec">Biznes</h2>
   <section class="card">
-    <span class="tag tag-med">WAŻNE</span>
-    <h3>Anthropic Q2 2026: &gt;$11,5 mld vs $787 mln YoY vs $4,73 mld Q1</h3>
-    <p>Bloomberg (14.08, 21:08 UTC) i CNBC (15.08) podają preliminary Q2: przychód powyżej 11,5 mld USD wobec 787 mln rok wcześniej i 4,73 mld w Q1. To pierwsze dodatnie adjusted operating income.</p>
-    <p>Źródło: wstępne dokumenty inwestorskie, nie oficjalny blog firmy. CNBC: rzecznik nie skomentował natychmiast. Majowy run-rate $47 mld to starsza, firmowa liczba — nie mylić z Q2.</p>
-    <p>Wyceny IPO 1–2 bln USD krążą w coverage. To spekulacja, nie fakt — nie podawać jako potwierdzone.</p>
-    <p class="date">Bloomberg 14.08.2026, 21:08 UTC · CNBC 15.08.2026</p>
-    <div class="quote">Spekulacja, nie fakt: $1–2T IPO / jesień — nie cytować jako potwierdzone.</div>
+    <span class="tag tag-rum">UNWIND</span>
+    <h3>Manus: Meta oddaje kontrolę po ośmiu miesiącach</h3>
+    <p>Computerworld i The Register: Meta rezygnuje z kontroli nad chińskim startupem agentowym Manus. Firma ma wrócić do samodzielnych operacji. Backup / deadline w checklistcie: ok. 22.08.</p>
     <div class="sources">
-      <a href="https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter">Bloomberg</a>
-      <a href="https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html">CNBC</a>
+      <a href="https://www.computerworld.com/article/4209728/meta-gives-up-control-of-chinese-ai-startup-manus-after-eight-months.html">Computerworld</a>
+      <a href="https://www.theregister.com/ai-and-ml/2026/08/12/zucks-chinese-agentic-prey-escapes-will-resume-standalone-ops/5286598">The Register</a>
     </div>
   </section>
+
   <h2 class="sec">Open-source / dev</h2>
   <div class="grid2">
     <section class="card">
-      <span class="tag tag-ok">NOWE</span>
-      <h3>DeepSeek Harness — MIT, everything is a plugin</h3>
-      <p>The Register 14.08 i SitePoint 15.08: Harness traktuje wszystko jako plugin (Cordis). Runtime agenta OSS kontra lock-in Claude Code / Codex.</p>
-      <p>Developer preview, licencja MIT. RuntimeWire wiąże to z V4-Pro i podwyżką API — nie mylić z dzisiejszym peak/off-peak.</p>
-      <p class="date">The Register 14.08.2026 · SitePoint 15.08.2026</p>
+      <span class="tag tag-ok">HF</span>
+      <h3>Hugging Face Summer 2026 — Qwen 151k pochodnych</h3>
+      <p>Oficjalny stan otwartych modeli: Summer 2026. W materiale: Qwen ma 151 tys. pochodnych. To przegląd ekosystemu, nie nowy checkpoint z weekendu.</p>
+      <div class="sources">
+        <a href="https://huggingface.co/blog/state-of-open-models-summer-2026">Hugging Face</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-ok">HARNESS</span>
+      <h3>DeepSeek Harness — everything is a plugin</h3>
+      <p>The Register 14.08 i SitePoint: Harness traktuje wszystko jako plugin. Developer preview, runtime agenta OSS wobec lock-in Claude Code / Codex.</p>
+      <p>Nie mylić z dzisiejszym peak/off-peak API — to osobny wątek narzędziowy.</p>
       <div class="sources">
         <a href="https://www.theregister.com/ai-and-ml/2026/08/14/deepseeks-innovative-harness-treats-everything-as-a-plug-in/5288095">The Register</a>
         <a href="https://www.sitepoint.com/deepseek-harness-developer-preview/">SitePoint</a>
-        <a href="https://runtimewire.com/article/deepseek-open-sources-agent-harness-v4-pro-api-price-hike">RuntimeWire</a>
-      </div>
-    </section>
-    <section class="card">
-      <span class="tag tag-rum">CIENKIE</span>
-      <h3>Codex CLI rust-v0.148.0-alpha.20</h3>
-      <p>Tag na GitHubie 16.08 o 00:21 UTC. Brak changelogu — cienki sygnał, nie recenzja release’u.</p>
-      <p>Nie interpretować jako nowy produkt OpenAI. To tag alpha bez notatek.</p>
-      <p class="date">16.08.2026, 00:21 UTC</p>
-      <div class="sources">
-        <a href="https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.20">GitHub</a>
       </div>
     </section>
   </div>
-  <h2 class="sec">Narzędzia</h2>
-  <div class="grid2eq">
-    <section class="card">
-      <span class="tag tag-ok">TRENDING</span>
-      <h3>DeepSeek Harness jako runtime agenta</h3>
-      <p>OSS, pluginowy model — alternatywa wobec lock-in Claude Code i Codex. To narzędzie, nie tylko newsy labów.</p>
-      <p>Warto zestawić z oficjalnym Responses API DeepSeek (kompatybilność Codex).</p>
-      <p class="date">14–15.08.2026</p>
-      <div class="sources">
-        <a href="https://www.theregister.com/ai-and-ml/2026/08/14/deepseeks-innovative-harness-treats-everything-as-a-plug-in/5288095">The Register</a>
-        <a href="https://api-docs.deepseek.com/updates/">DeepSeek Updates</a>
-      </div>
-    </section>
-    <section class="card">
-      <span class="tag tag-med">DZIŚ</span>
-      <h3>DeepSeek API + Codex Responses</h3>
-      <p>Oficjalne docs: Responses API i kompatybilność Codex. Peak/off-peak od dziś 16:00 UTC zmienia rachunek kosztów.</p>
-      <p>Jeśli porównujesz $/M z innymi modelami — patrz też sygnał Tibo o tokenach (społeczność).</p>
-      <p class="date">16.08.2026, 16:00 UTC</p>
-      <div class="sources">
-        <a href="https://api-docs.deepseek.com/quick_start/pricing">DeepSeek Pricing</a>
-        <a href="https://api-docs.deepseek.com/updates/">DeepSeek Updates</a>
-      </div>
-    </section>
-    <section class="card">
-      <span class="tag tag-rum">KONTEKST</span>
-      <h3>Gemini 3.7 Flash jako tani coding/agent default</h3>
-      <p>Intro $0.75/$3.75 do 31.12.2026. Nadal najczytelniejszy tani default na coding i agentów, dopóki trwa intro.</p>
-      <p>Do checklisty: porównać koszt vs Sonnet 5 — bez zgadywania, tylko po cennikach.</p>
-      <p class="date">13.08.2026 · intro do 31.12.2026</p>
-      <div class="sources">
-        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google Blog</a>
-        <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/">DeepMind</a>
-      </div>
-    </section>
-    <section class="card">
-      <span class="tag tag-ok">DOMYŚLNE</span>
-      <h3>Claude Code auto mode — default od 14.08, spór na HN</h3>
-      <p>Auto mode jest już defaultem od 14.08. Wątek HN żyje; to nie nowość weekendu, tylko nadal aktualne narzędzie.</p>
-      <p>Builderzy na X (m.in. @janschultecom dziś) skarżą się, że Claude Code ignoruje allow/deny — społeczność, nie changelog.</p>
-      <p class="date">default od 14.08.2026</p>
-      <div class="sources">
-        <a href="https://claude.com/blog/auto-mode-default-in-claude-code">Claude Blog</a>
-        <a href="https://news.ycombinator.com/item?id=49214994">Hacker News</a>
-      </div>
-    </section>
-  </div>
-  <section class="card" style="margin-top:12px">
-    <span class="tag tag-ok">ROLLING</span>
-    <h3>Grok 4.6 w GitHub Copilot — nadal się wdraża</h3>
-    <p>Changelog GitHub 14.08: Grok 4.6 available in Copilot. Nadal rolling, nie „nowość niedzieli”.</p>
-    <p>Do checklisty: czy picker Copilota już pokazuje 4.6. Na X @minchoi (16.08, ~302K views) — “Grok 4.6 is getting scary good”, 10 przykładów.</p>
-    <p class="date">14.08.2026 · rolling</p>
+  <section class="card">
+    <span class="tag tag-out">BEZ ZMIAN</span>
+    <h3>Claude Code nadal v2.1.233</h3>
+    <p>Tag na GitHubie bez nowego weekendu. Changelog docs bez świeżego wpisu produktowego sob–niedz. Do checklisty: <code>claude --version</code>.</p>
     <div class="sources">
-      <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/">GitHub Blog</a>
-      <a href="https://x.com/minchoi/status/2088829945749311925">X / minchoi</a>
+      <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.233">v2.1.233</a>
+      <a href="https://github.com/anthropics/claude-code/releases">Releases</a>
+      <a href="https://code.claude.com/docs/en/changelog">Changelog</a>
     </div>
   </section>
+
+  <h2 class="sec">Narzędzia</h2>
+  <p class="meta" style="margin-bottom:8px">Pick 6, które realnie się ruszają · dlaczego to ważne + link</p>
+  <div class="photos">
+    <div>
+      <img src="img/needle.svg" alt="Needle 2 — 14MB agentic LLM od Cactus, Show HN i GH trending">
+      <div class="cap">Needle 2 · Cactus · 14MB agentic LLM · Show HN ~529 · GH trending +547</div>
+    </div>
+    <div>
+      <section class="card" style="height:100%">
+        <span class="tag tag-ok">TRENDING</span>
+        <h3>Needle 2 (Cactus)</h3>
+        <p>14MB agentic LLM. Show HN ~529 punktów, GitHub trending +547. Lokalny, mały agent — stąd ruch, nie hype labów.</p>
+        <div class="sources">
+          <a href="https://cactuscompute.com/needle">cactuscompute.com/needle</a>
+          <a href="https://github.com/cactus-compute/needle">GitHub</a>
+          <a href="https://news.ycombinator.com/item?id=49246804">Show HN</a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="grid2eq">
+    <section class="card">
+      <span class="tag tag-ok">PH #2</span>
+      <h3>GLM-5.3 (Z.ai) — 14.08</h3>
+      <p>Product Hunt #2 dziś. Terminal-Bench 4.6 → 28.3. Wagi za ok. 2 tygodnie. To skok bench + zapowiedź wag, nie GA wagi dziś.</p>
+      <div class="sources">
+        <a href="https://z.ai/blog/glm-5.3">z.ai/blog/glm-5.3</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-med">DZIŚ PH</span>
+      <h3>Port22 — iPhone pilot</h3>
+      <p>Pilot na iPhone dla Claude Code / Codex / OpenCode. Launch na Product Hunt 16.08. Mobilny terminal agentów — stąd miejsce w checklistcie.</p>
+      <div class="sources">
+        <a href="https://www.tryport22.com/">tryport22.com</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-ok">+545</span>
+      <h3>ego-lite — agent browser</h3>
+      <p>GitHub trending +545. Przeglądarka pod agentów, nie kolejny chat UI. Ruch gwiazdek dziś, nie recenzja dojrzałości.</p>
+      <div class="sources">
+        <a href="https://github.com/citrolabs/ego-lite">github.com/citrolabs/ego-lite</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-ok">+1607</span>
+      <h3>diagram-design</h3>
+      <p>+1607 gwiazdek dziś. Narzędzie do diagramów — największy skok gwiazdek w tym picku. Spełnia test „actually moving”.</p>
+      <div class="sources">
+        <a href="https://github.com/cathrynlavery/diagram-design">github.com/cathrynlavery/diagram-design</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-ok">SHOW HN</span>
+      <h3>ThoughtDAG</h3>
+      <p>Show HN: graf myśli / DAG dla agentów. Demo + wątek — świeży sygnał builderski, nie produkt labów.</p>
+      <div class="sources">
+        <a href="https://chenxiachan.github.io/thoughtdag/">thoughtdag</a>
+        <a href="https://news.ycombinator.com/item?id=49307700">Show HN</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-rum">SPEC + COPILOT</span>
+      <h3>cursor/plugins + Grok 4.6 w Copilocie</h3>
+      <p>Oficjalna spec wtyczek Cursor: <a href="https://github.com/cursor/plugins">github.com/cursor/plugins</a> — kontekst po close SpaceX. Grok 4.6 available in GitHub Copilot (changelog 14.08), nadal rolling.</p>
+      <p>Gemini 3.7 Flash zostaje tanim coding default (intro $0.75/$3.75 do 31.12) — szczegóły w Produktach.</p>
+      <div class="sources">
+        <a href="https://github.com/cursor/plugins">cursor/plugins</a>
+        <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/">GitHub Copilot changelog</a>
+      </div>
+    </section>
+  </div>
+
   <h2 class="sec">Gadżety</h2>
-  <p class="meta" style="margin-bottom:8px">CROWDFUNDING · snapshoty trackerów BackerLens z 16.08, nie API Kickstartera. HTML KS blokuje Cloudflare — linkujemy trackery + discover.</p>
+  <p class="meta" style="margin-bottom:8px">Tylko 3 · etykieta crowdfunding vs shipping · oficjalne URL-e Kickstartera</p>
   <div class="grid3">
     <section class="card">
       <span class="tag tag-rum">CROWDFUNDING</span>
-      <h3>MemoMind One — okulary AI</h3>
-      <p>~ $1.1M, 11047% funded, zamyka 27.08.2026. Bez kamery, privacy-first.</p>
-      <p>Liczby z trackera BackerLens (weryfikacja 16.08), nie z API Kickstartera.</p>
-      <p class="date">zamyka 27.08.2026 · snapshot 16.08</p>
+      <h3>MemoMind One (XGIMI)</h3>
+      <p>Live, zamyka ok. 27–28.08.2026. Dual micro-LED, bez kamery, 47 g, od $399. &gt;$1M / 2000+ backerów.</p>
+      <p>Oficjalna strona kampanii, nie tracker.</p>
       <div class="sources">
-        <a href="https://backerlens.com/p/176660746-memomind-one-the-most-natural-ai-display-glasses">BackerLens</a>
-        <a href="https://www.kickstarter.com/discover/advanced?term=AI&amp;sort=popular">Kickstarter</a>
+        <a href="https://www.kickstarter.com/projects/1963472698/memomind-one-the-most-natural-ai-display-glasses">Kickstarter · MemoMind One</a>
       </div>
     </section>
     <section class="card">
       <span class="tag tag-rum">CROWDFUNDING</span>
-      <h3>LUMISTAR CARRY — robot koszykarski</h3>
-      <p>~ $1.2M. Quad-camera AI basketball training partner. Zamyka 21.08.2026.</p>
-      <p>Najbliższy deadline z trójki. Snapshot trackera, nie KS API.</p>
-      <p class="date">zamyka 21.08.2026 · snapshot 16.08</p>
+      <h3>AIVU AI Glasses (TOZO)</h3>
+      <p>Live. Start 17.07. Ok. $87k / 210+ backerów na 14.08. Rozpoznawanie on-device, bez zapisu obrazu, 45 g.</p>
       <div class="sources">
-        <a href="https://backerlens.com/p/592683450-lumistar-carry-quad-camera-ai-basketball-training-partner">BackerLens</a>
-        <a href="https://www.kickstarter.com/discover/advanced?term=AI&amp;sort=popular">Kickstarter</a>
+        <a href="https://www.kickstarter.com/projects/816687468/aivu-1st-ai-object-recognition-privacy-waveguide-glasses">Kickstarter · AIVU</a>
       </div>
     </section>
     <section class="card">
-      <span class="tag tag-rum">CROWDFUNDING</span>
-      <h3>Lumi AI Dock — agent na telefonie</h3>
-      <p>Fizyczny agent, który używa Twojego telefonu. ~$51K, 1024% funded, zamyka 4.09.2026.</p>
-      <p>Mniejsza kampania, ten sam zastrzeżenie: tracker, nie oficjalne API KS.</p>
-      <p class="date">zamyka 4.09.2026 · snapshot 16.08</p>
+      <span class="tag tag-ok">FUNDED · SHIPPING</span>
+      <h3>Tiiny AI Pocket Lab</h3>
+      <p>Sfinansowane, wysyłka sierpień 2026. USB-C, lokalny box LLM ~120B. $3.07M / 2181 backerów.</p>
+      <p>To nie jest live crowdfunding — to fulfillment.</p>
       <div class="sources">
-        <a href="https://backerlens.com/p/807051246-lumi-ai-dockthe-ai-agent-physically-uses-your-phone">BackerLens</a>
-        <a href="https://www.kickstarter.com/discover/advanced?term=AI&amp;sort=popular">Kickstarter</a>
+        <a href="https://www.kickstarter.com/projects/tiinyai/tiiny-ai-pocket-lab">Kickstarter · Tiiny</a>
       </div>
     </section>
   </div>
+  <p class="note">Więcej kampanii AI: <a href="https://www.kickstarter.com/discover/advanced?term=AI&amp;sort=popular">Kickstarter discover · AI · popular</a></p>
+
   <h2 class="sec">Sygnały X + Reddit + HN</h2>
-  <p class="meta" style="margin-bottom:8px">community · sweep X @ProductRootIO 16.08 ~10:15 UTC · bez dumpa, bez plotek Kalshi / OrcaRouter</p>
+  <p class="meta" style="margin-bottom:8px">community · bez dumpa · trendy bez URL pojedynczego posta</p>
   <div class="grid2eq">
     <section class="card">
-      <span class="tag tag-rum">COMMUNITY</span>
-      <h3>HN: Risk Report PDF</h3>
-      <p>Wątek pod piątkowym Aug 2026 Risk Report nadal jest primary na HN. To nie nowy dokument weekendu.</p>
-      <p>Czytaj PDF + komentarze; nie recyklinguj watermarku jako newsa z niedzieli.</p>
-      <p class="date">primary 14.08.2026 · wątek żywy 16.08</p>
+      <span class="tag tag-rum">HN · ~947</span>
+      <h3>Opus 5 „feels worse”</h3>
+      <p>Wątek HN ok. 947 punktów. Esej: dlaczego Opus 5 „czuje się gorzej”. Odbiór jakości, nie changelog Anthropic.</p>
+      <div class="sources">
+        <a href="https://news.ycombinator.com/item?id=49296740">Hacker News</a>
+        <a href="https://mun-logadan.github.io/why-does-opus-5-feel-worse/">why-does-opus-5-feel-worse</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-rum">HN</span>
+      <h3>Codex × kernel / autoresearch</h3>
+      <p>Wątek HN + notatka Sankalpa o autoresearch. Sygnał builderski wokół Codex, nie release OpenAI.</p>
+      <div class="sources">
+        <a href="https://news.ycombinator.com/item?id=49309549">Hacker News</a>
+        <a href="https://sankalp.bearblog.dev/autoresearch/">sankalp.bearblog.dev</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-rum">HN</span>
+      <h3>AI leadership</h3>
+      <p>Wątek o leadershipzie w AI. Dyskusja społeczności, nie memo labów.</p>
+      <div class="sources">
+        <a href="https://news.ycombinator.com/item?id=49309451">Hacker News</a>
+      </div>
+    </section>
+    <section class="card">
+      <span class="tag tag-rum">HN</span>
+      <h3>Risk Report — wątek żywy</h3>
+      <p>Piątkowy Aug 2026 Risk Report nadal primary na HN. Czytać razem z Decoder o klasyfikatorach bio — nie recykling watermarku jako newsa z niedzieli.</p>
       <div class="sources">
         <a href="https://news.ycombinator.com/item?id=49303540">Hacker News</a>
-        <a href="https://www.anthropic.com/aug-2026-risk-report">Anthropic</a>
+        <a href="https://www.anthropic.com/aug-2026-risk-report">Risk Report</a>
       </div>
     </section>
     <section class="card">
-      <span class="tag tag-rum">COMMUNITY</span>
-      <h3>HN: Claude Code auto mode</h3>
-      <p>Spór o auto mode jako default od 14.08. Nadal aktualny wątek, nie nowy changelog.</p>
-      <p>Łączy się z dzisiejszym sygnałem builderów, że allow/deny bywa ignorowane.</p>
-      <p class="date">default od 14.08.2026</p>
-      <div class="sources">
-        <a href="https://news.ycombinator.com/item?id=49214994">Hacker News</a>
-        <a href="https://claude.com/blog/auto-mode-default-in-claude-code">Claude Blog</a>
-      </div>
-    </section>
-    <section class="card">
-      <span class="tag tag-out">COMMUNITY</span>
-      <h3>OpenAI community: crash macOS po 1–3 min</h3>
-      <p>Wątek 15.08: ChatGPT Desktop 26.8.10.50856 pada po 1–3 minutach — computer use / sky node thread exhaustion.</p>
-      <p>To raport użytkowników, nie status.openai.com. Nie twierdzić o incydencie Terra, jeśli go tam nie widać.</p>
-      <p class="date">15.08.2026</p>
-      <div class="sources">
-        <a href="https://community.openai.com/t/chatgpt-desktop-26-810-50856-crashes-after-1-3-minutes-computer-use-sky-node-thread-exhaustion/1390562">OpenAI Community</a>
-      </div>
-    </section>
-    <section class="card">
-      <span class="tag tag-out">COMMUNITY</span>
-      <h3>Oficjalne konta: cisza sob–niedz.</h3>
-      <p>Brak nowych postów Sat–Sun od @OpenAI, @xai, @claudeai. Piątkowe @AnthropicAI (watermark FAQ ~19:16 UTC, Risk Report ~18:00 UTC) zostają kanoniczne.</p>
-      <p>Anegdoty o cancelu watermarku na X/BI to nie churn — BI on the record: brak wzrostowego trendu rezygnacji.</p>
-      <p class="date">sweep 16.08.2026 ~10:15 UTC</p>
-      <div class="sources">
-        <a href="https://x.com/AnthropicAI/status/2088343978873966687">X / AnthropicAI</a>
-        <a href="https://x.com/AnthropicAI/status/2088324824863236248">X / AnthropicAI</a>
-        <a href="https://www.businessinsider.com/anthropic-reveals-more-about-ai-watermarking-plans-amid-eu-regulations-2026-8">Business Insider</a>
-      </div>
-    </section>
-    <section class="card">
-      <span class="tag tag-ok">COMMUNITY</span>
-      <h3>@thsottiaux: token OpenAI ≠ token innych modeli</h3>
-      <p>Tibo (OpenAI), 16.08 05:52 UTC: porównywanie $/M między modelami jest mylące, bo token OpenAI to nie ten sam token co u innych.</p>
-      <p>Ważny kontekst do dzisiejszego cennika DeepSeek i intro Gemini.</p>
-      <p class="date">16.08.2026, 05:52 UTC</p>
+      <span class="tag tag-ok">X</span>
+      <h3>@thsottiaux: token ≠ token</h3>
+      <p>Tibo (OpenAI): porównywanie $/M między modelami jest mylące, bo token OpenAI to nie ten sam token co u innych. Kontekst do dzisiejszego cennika DeepSeek i intro Gemini.</p>
       <div class="sources">
         <a href="https://x.com/thsottiaux/status/2088866513008873560">X / thsottiaux</a>
       </div>
     </section>
     <section class="card">
-      <span class="tag tag-ok">COMMUNITY</span>
-      <h3>@minchoi: Grok 4.6 „scary good”</h3>
-      <p>16.08 03:27 UTC, ~302K views, 10 przykładów. Sygnał builderski, nie changelog xAI.</p>
-      <p>Pasuje do rolling Grok 4.6 w Copilocie (14.08) — nie jako dowód GA, tylko jako odbiór jakości.</p>
-      <p class="date">16.08.2026, 03:27 UTC</p>
+      <span class="tag tag-ok">X</span>
+      <h3>@minchoi: Grok 4.6</h3>
+      <p>Sygnał builderski o jakości Grok 4.6. Pasuje do rolling w Copilocie (14.08) — odbiór, nie changelog xAI.</p>
       <div class="sources">
         <a href="https://x.com/minchoi/status/2088829945749311925">X / minchoi</a>
-        <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/">GitHub Blog</a>
+        <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/">Copilot changelog</a>
       </div>
     </section>
     <section class="card">
-      <span class="tag tag-out">COMMUNITY</span>
-      <h3>Codex $80 weekly-reset — pushback + trend</h3>
-      <p>@ishuagra02 16.08 01:53 UTC: opór wobec $80 weekly-reset. Sidebar trend: “OpenAI Codex Users Criticize $80 Weekly Reset Fee” (~17h, 6.2K postów) — karta trendu, bez URL pojedynczego posta.</p>
-      <p>To społeczność, nie komunikat OpenAI.</p>
-      <p class="date">16.08.2026, 01:53 UTC · trend ~17h</p>
+      <span class="tag tag-out">X</span>
+      <h3>@ishuagra02: Codex $80 weekly reset</h3>
+      <p>Opór wobec $80 weekly-reset. Osobna karta trendu (bez URL): ~6.2K postów. Społeczność, nie komunikat OpenAI.</p>
       <div class="sources">
         <a href="https://x.com/ishuagra02/status/2088806257759015109">X / ishuagra02</a>
       </div>
     </section>
     <section class="card">
-      <span class="tag tag-out">COMMUNITY</span>
-      <h3>@janschultecom: Claude Code buggier (allow/deny)</h3>
-      <p>16.08 10:14 UTC: Claude Code ma ignorować reguły allow/deny. Sygnał buildera, nie issue tracker Anthropic.</p>
-      <p>Czytaj razem z HN auto mode — ten sam stos, inny objaw.</p>
-      <p class="date">16.08.2026, 10:14 UTC</p>
+      <span class="tag tag-out">X</span>
+      <h3>@janschultecom: Claude Code allow/deny</h3>
+      <p>Sygnał buildera: Claude Code ma ignorować reguły allow/deny. Nie issue tracker Anthropic.</p>
       <div class="sources">
         <a href="https://x.com/janschultecom/status/2088932370434896312">X / janschultecom</a>
-        <a href="https://news.ycombinator.com/item?id=49214994">Hacker News</a>
-      </div>
-    </section>
-    <section class="card">
-      <span class="tag tag-rum">COMMUNITY</span>
-      <h3>@thdxr: duży buyer DeepSeek Flash kwestionuje claim</h3>
-      <p>15.08 18:10 UTC: jeden z największych buyerów DeepSeek Flash pyta o claim pricing/perf. Kontekst do dzisiejszego peak/off-peak, nie recenzja V4-Pro.</p>
-      <p>Nie wyciągać z tego “DeepSeek kłamie” — to pytanie power-usera.</p>
-      <p class="date">15.08.2026, 18:10 UTC</p>
-      <div class="sources">
-        <a href="https://x.com/thdxr/status/2088689684473950325">X / thdxr</a>
-        <a href="https://api-docs.deepseek.com/quick_start/pricing">DeepSeek Pricing</a>
-      </div>
-    </section>
-    <section class="card">
-      <span class="tag tag-rum">TREND</span>
-      <h3>Sidebar: SpaceXAI × Cursor Ultra / SuperGrok Heavy</h3>
-      <p>Trend ~1h, 277 postów: “SpaceXAI Extends Free Cursor Ultra for SuperGrok Heavy”. Karta trendu — brak URL pojedynczego posta.</p>
-      <p>Nie potwierdzać jako oficjalny changelog Cursor / xAI. Tylko odnotowany trend społeczności.</p>
-      <p class="date">16.08.2026 · ~1h, 277 postów</p>
-      <div class="sources">
-        <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/">GitHub Blog</a>
       </div>
     </section>
   </div>
+  <div class="grid2eq">
+    <section class="card">
+      <span class="tag tag-rum">TREND · BEZ URL</span>
+      <h3>Codex $80 weekly reset · ~6.2K postów</h3>
+      <p>Karta trendu na X. Brak URL pojedynczego posta. Łączy się z @ishuagra02 — to ten sam temat, inna warstwa (aggregat vs jeden tweet).</p>
+    </section>
+    <section class="card">
+      <span class="tag tag-rum">TREND · BEZ URL</span>
+      <h3>SpaceXAI × free Cursor Ultra / SuperGrok Heavy · ~277 postów</h3>
+      <p>Karta trendu. Nie potwierdzać jako oficjalny changelog Cursor / xAI. Tylko odnotowany szum po close.</p>
+    </section>
+  </div>
+
   <h2 class="sec">Co warto dziś sprawdzić</h2>
   <section class="card">
     <ol class="five">
-      <li>DeepSeek prices after 18:00 CEST — <a href="https://api-docs.deepseek.com/quick_start/pricing">DeepSeek Pricing</a> · <a href="https://api-docs.deepseek.com/updates/">DeepSeek Updates</a>.</li>
-      <li>Detection API nadal „soon”? — <a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic</a>.</li>
-      <li>Claude Code &gt;2.1.233? — <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.233">GitHub</a>.</li>
-      <li>Copilot Grok 4.6 picker — <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/">GitHub Blog</a>.</li>
-      <li>Gemini 3.7 Flash vs Sonnet 5 cost — <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google Blog</a>.</li>
-      <li>Kickstarter AI discover — <a href="https://www.kickstarter.com/discover/advanced?term=AI&amp;sort=popular">Kickstarter</a>.</li>
+      <li>DeepSeek prices po 18:00 CEST — czy peak/off-peak jest już live? <a href="https://api-docs.deepseek.com/quick_start/pricing">cennik</a> · <a href="https://api-docs.deepseek.com/updates/">updates</a></li>
+      <li><code>claude --version</code> — nadal 2.1.233? <a href="https://github.com/anthropics/claude-code/releases">releases</a></li>
+      <li>Detection API nadal „soon”? <a href="https://www.anthropic.com/news/claude-text-watermark">watermark FAQ</a></li>
+      <li>Gemini 3.7 Flash w Search AI Mode — czy widzisz nowy model? <a href="https://www.theverge.com/tech/980532/the-new-gemini-model-is-now-in-ai-mode-for-search">The Verge</a></li>
+      <li>Port22 na Product Hunt / iPhone — czy pilot w ogóle się otwiera? <a href="https://www.tryport22.com/">tryport22.com</a></li>
+      <li>Kickstarter AI discover — MemoMind / AIVU live, Tiiny w shipping. <a href="https://www.kickstarter.com/discover/advanced?term=AI&amp;sort=popular">discover</a></li>
+      <li>Manus backup ~22.08 — czy unwind Meta ma już twardy deadline? <a href="https://www.computerworld.com/article/4209728/meta-gives-up-control-of-chinese-ai-startup-manus-after-eight-months.html">Computerworld</a></li>
     </ol>
     <div class="pills">
-      <span class="pill">Q2 &gt;11,5 mld · preliminary</span>
-      <span class="pill">IPO 1–2T = spekulacja</span>
+      <span class="pill">SpaceX × Cursor closed</span>
       <span class="pill">DeepSeek 18:00 CEST</span>
-      <span class="pill">Harness MIT</span>
-      <span class="pill">KS = tracker, nie API</span>
-      <span class="pill">community X ~10:15 UTC</span>
+      <span class="pill">Q2 &gt;$11.5B preliminary</span>
+      <span class="pill">IPO 1–2T = spekulacja</span>
+      <span class="pill">Needle 2 + Port22</span>
+      <span class="pill">KS = oficjalne URL-e</span>
     </div>
   </section>
-  <h2 class="sec">3 tweets ready to post</h2>
+
+  <h2 class="sec">3 tweets EN</h2>
   <section class="card">
     <p class="meta">Angielski · &lt;280 znaków z linkiem primary</p>
-    <div class="tweet">DeepSeek peak/off-peak goes live today 16:00 UTC / 18:00 CEST. V4-Pro peak: $0.044 cache hit / $1.32 miss / $3.96 out per 1M. Off-peak is half.<br><a href="https://api-docs.deepseek.com/quick_start/pricing">https://api-docs.deepseek.com/quick_start/pricing</a></div>
-    <div class="tweet">Anthropic Q2 2026: revenue &gt;$11.5B vs $787M YoY. First positive adj. operating income. Investor docs, not a company blog. Preliminary.<br><a href="https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter">https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter</a></div>
-    <div class="tweet">DeepSeek Harness (MIT, OSS): everything is a plugin. Agent runtime vs Claude Code / Codex lock-in.<br><a href="https://www.theregister.com/ai-and-ml/2026/08/14/deepseeks-innovative-harness-treats-everything-as-a-plug-in/5288095">https://www.theregister.com/ai-and-ml/2026/08/14/deepseeks-innovative-harness-treats-everything-as-a-plug-in/5288095</a></div>
+    <div class="tweet">SpaceX has closed its acquisition of Cursor. All-stock, ~$60B. Primary from the Cursor blog, confirmed closed by TechCrunch (15 Aug).<br><a href="https://cursor.com/blog/joining-spacex">https://cursor.com/blog/joining-spacex</a></div>
+    <div class="tweet">DeepSeek peak/off-peak starts today 16:00 UTC / 18:00 CEST. Off-peak is half the *new* peak — not a discount vs the old flat rate. V4-Flash out $0.28→$0.66/$1.32; V4-Pro $0.87→$1.98/$3.96.<br><a href="https://api-docs.deepseek.com/quick_start/pricing">https://api-docs.deepseek.com/quick_start/pricing</a></div>
+    <div class="tweet">Anthropic Q2 2026 revenue &gt;$11.5B (Bloomberg 14 Aug 21:08 UTC / CNBC 15 Aug). Investor docs, not a company blog. Preliminary. Treat $1–2T IPO talk as speculation, not fact.<br><a href="https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter">https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter</a></div>
   </section>
+
   <footer class="footer">
     <p>Źródła · 16.08.2026 · wydanie rozszerzone · productroot.io/ai</p>
     <p>
-      <a href="https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter">Bloomberg</a>
-      <a href="https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html">CNBC</a>
+      <a href="https://cursor.com/blog/joining-spacex">Cursor blog</a>
+      <a href="https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/">TechCrunch · Cursor close</a>
+      <a href="https://9to5mac.com/2026/08/14/spacex-lands-deal-to-likely-purchase-claude-code-and-openai-codex-competitor/">9to5Mac</a>
       <a href="https://api-docs.deepseek.com/updates/">DeepSeek Updates</a>
       <a href="https://api-docs.deepseek.com/quick_start/pricing">DeepSeek Pricing</a>
+      <a href="https://www.computerworld.com/article/4209468/deepseek-raises-some-v4-prices-by-more-than-10x-as-ai-demand-strains-capacity-2.html">Computerworld · DeepSeek</a>
+      <a href="https://www.theverge.com/tech/980532/the-new-gemini-model-is-now-in-ai-mode-for-search">The Verge · Gemini Search</a>
       <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google Blog</a>
       <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/">DeepMind</a>
-      <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.233">GitHub</a>
-      <a href="https://www.anthropic.com/news">Anthropic News</a>
-      <a href="https://x.ai/news">xAI News</a>
-      <a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic</a>
-      <a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/">TechCrunch</a>
+      <a href="https://github.com/anthropics/claude-code/releases">Claude Code releases</a>
+      <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.233">v2.1.233</a>
+      <a href="https://code.claude.com/docs/en/changelog">Claude Code changelog</a>
+      <a href="https://the-decoder.com/anthropics-bio-weapons-filter-was-down-for-nearly-a-year-exposing-133-million-requests/">The Decoder</a>
+      <a href="https://thenextweb.com/news/anthropic-risk-report-bio-classifiers-human-feedback-gap">TNW · bio classifiers</a>
+      <a href="https://www.anthropic.com/aug-2026-risk-report">Risk Report</a>
+      <a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/">TechCrunch · watermark</a>
+      <a href="https://www.theregister.com/ai-and-ml/2026/08/15/anthropic-says-text-watermarking-scheme-relies-on-inconsequential-words/5288156">The Register · watermark</a>
       <a href="https://www.businessinsider.com/anthropic-reveals-more-about-ai-watermarking-plans-amid-eu-regulations-2026-8">Business Insider</a>
-      <a href="https://www.anthropic.com/aug-2026-risk-report">Anthropic</a>
-      <a href="https://news.ycombinator.com/item?id=49303540">Hacker News</a>
-      <a href="https://www.theregister.com/ai-and-ml/2026/08/14/deepseeks-innovative-harness-treats-everything-as-a-plug-in/5288095">The Register</a>
-      <a href="https://www.sitepoint.com/deepseek-harness-developer-preview/">SitePoint</a>
-      <a href="https://runtimewire.com/article/deepseek-open-sources-agent-harness-v4-pro-api-price-hike">RuntimeWire</a>
-      <a href="https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.20">GitHub</a>
-      <a href="https://news.ycombinator.com/item?id=49214994">Hacker News</a>
-      <a href="https://claude.com/blog/auto-mode-default-in-claude-code">Claude Blog</a>
-      <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/">GitHub Blog</a>
-      <a href="https://www.kickstarter.com/discover/advanced?term=AI&amp;sort=popular">Kickstarter</a>
-      <a href="https://backerlens.com/p/176660746-memomind-one-the-most-natural-ai-display-glasses">BackerLens</a>
-      <a href="https://backerlens.com/p/592683450-lumistar-carry-quad-camera-ai-basketball-training-partner">BackerLens</a>
-      <a href="https://backerlens.com/p/807051246-lumi-ai-dockthe-ai-agent-physically-uses-your-phone">BackerLens</a>
-      <a href="https://community.openai.com/t/chatgpt-desktop-26-810-50856-crashes-after-1-3-minutes-computer-use-sky-node-thread-exhaustion/1390562">OpenAI Community</a>
-      <a href="https://x.com/AnthropicAI/status/2088343978873966687">X / AnthropicAI</a>
-      <a href="https://x.com/AnthropicAI/status/2088324824863236248">X / AnthropicAI</a>
-      <a href="https://x.com/thsottiaux/status/2088866513008873560">X / thsottiaux</a>
-      <a href="https://x.com/minchoi/status/2088829945749311925">X / minchoi</a>
-      <a href="https://x.com/ishuagra02/status/2088806257759015109">X / ishuagra02</a>
-      <a href="https://x.com/janschultecom/status/2088932370434896312">X / janschultecom</a>
-      <a href="https://x.com/thdxr/status/2088689684473950325">X / thdxr</a>
+      <a href="https://www.anthropic.com/news/claude-text-watermark">Anthropic watermark</a>
+      <a href="https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter">Bloomberg · Q2</a>
+      <a href="https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html">CNBC · Q2</a>
+      <a href="https://www.channelnewsasia.com/east-asia/us-china-ai-race-pax-silica-waico-6320671">CNA · Pax Silica</a>
+      <a href="https://thenextweb.com/news/pax-silica-us-letter-35-countries-china-ai-coalition">TNW · Pax Silica</a>
+      <a href="https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/">TechCrunch · Jane Doe 4</a>
+      <a href="https://www.computerworld.com/article/4209728/meta-gives-up-control-of-chinese-ai-startup-manus-after-eight-months.html">Computerworld · Manus</a>
+      <a href="https://www.theregister.com/ai-and-ml/2026/08/12/zucks-chinese-agentic-prey-escapes-will-resume-standalone-ops/5286598">The Register · Manus</a>
+      <a href="https://huggingface.co/blog/state-of-open-models-summer-2026">HF Summer 2026</a>
+      <a href="https://www.theregister.com/ai-and-ml/2026/08/14/deepseeks-innovative-harness-treats-everything-as-a-plug-in/5288095">The Register · Harness</a>
+      <a href="https://www.sitepoint.com/deepseek-harness-developer-preview/">SitePoint · Harness</a>
+      <a href="https://cactuscompute.com/needle">Needle</a>
+      <a href="https://github.com/cactus-compute/needle">Needle GH</a>
+      <a href="https://news.ycombinator.com/item?id=49246804">Show HN · Needle</a>
+      <a href="https://z.ai/blog/glm-5.3">GLM-5.3</a>
+      <a href="https://www.tryport22.com/">Port22</a>
+      <a href="https://github.com/citrolabs/ego-lite">ego-lite</a>
+      <a href="https://github.com/cathrynlavery/diagram-design">diagram-design</a>
+      <a href="https://chenxiachan.github.io/thoughtdag/">ThoughtDAG</a>
+      <a href="https://news.ycombinator.com/item?id=49307700">Show HN · ThoughtDAG</a>
+      <a href="https://github.com/cursor/plugins">cursor/plugins</a>
+      <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/">Grok 4.6 Copilot</a>
+      <a href="https://www.kickstarter.com/projects/1963472698/memomind-one-the-most-natural-ai-display-glasses">KS · MemoMind</a>
+      <a href="https://www.kickstarter.com/projects/816687468/aivu-1st-ai-object-recognition-privacy-waveguide-glasses">KS · AIVU</a>
+      <a href="https://www.kickstarter.com/projects/tiinyai/tiiny-ai-pocket-lab">KS · Tiiny</a>
+      <a href="https://www.kickstarter.com/discover/advanced?term=AI&amp;sort=popular">KS · discover AI</a>
+      <a href="https://news.ycombinator.com/item?id=49296740">HN · Opus 5</a>
+      <a href="https://mun-logadan.github.io/why-does-opus-5-feel-worse/">Opus 5 essay</a>
+      <a href="https://news.ycombinator.com/item?id=49309549">HN · Codex kernel</a>
+      <a href="https://sankalp.bearblog.dev/autoresearch/">autoresearch</a>
+      <a href="https://news.ycombinator.com/item?id=49309451">HN · AI leadership</a>
+      <a href="https://news.ycombinator.com/item?id=49303540">HN · Risk Report</a>
+      <a href="https://x.com/thsottiaux/status/2088866513008873560">X · thsottiaux</a>
+      <a href="https://x.com/minchoi/status/2088829945749311925">X · minchoi</a>
+      <a href="https://x.com/ishuagra02/status/2088806257759015109">X · ishuagra02</a>
+      <a href="https://x.com/janschultecom/status/2088932370434896312">X · janschultecom</a>
     </p>
   </footer>
 </div>
