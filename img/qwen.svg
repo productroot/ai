@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="800" height="220">
+  <rect width="800" height="220" fill="#0b1220"/>
+  <rect x="16" y="16" width="768" height="188" rx="16" fill="#111827" stroke="#334155"/>
+  <text x="40" y="80" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="700">QWEN 3.8 27B</text>
+  <text x="40" y="125" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">Apache 2 · 17GB Q4</text>
+  <text x="40" y="165" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16">default xhigh = overthinking · run low first</text>
+</svg>
