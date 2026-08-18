@@ -1,7 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
-  <rect width="1200" height="300" fill="#0b1220"/>
-  <rect x="40" y="40" width="1120" height="220" rx="18" fill="#111827" stroke="#334155"/>
-  <text x="80" y="110" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="3">STRIPE x OPENROUTER</text>
-  <text x="80" y="165" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="42" font-weight="700">$7B+ · reported</text>
-  <text x="80" y="210" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20">400+ models · 8M users · Stripe: no comment</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="PORTS-Pike Ohio AI campus — OpenAI tenant, 8 GW-IT, NVIDIA DSX">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="hall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <circle cx="1080" cy="40" r="160" fill="#76b900" opacity="0.07"/>
+  <circle cx="80" cy="380" r="120" fill="#fbbf24" opacity="0.05"/>
+  <g stroke="#1e293b" stroke-width="1" opacity="0.7">
+    <path d="M0 310 H1200"/><path d="M0 340 H1200"/>
+    <path d="M180 280 L40 420"/><path d="M420 280 L280 420"/><path d="M660 280 L520 420"/>
+    <path d="M900 280 L760 420"/><path d="M1140 280 L1000 420"/>
+  </g>
+  <g>
+    <rect x="70" y="118" width="210" height="118" rx="6" fill="url(#hall)" stroke="#334155"/>
+    <rect x="70" y="108" width="210" height="14" rx="4" fill="#76b900"/>
+    <text x="175" y="176" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" font-weight="700">NVIDIA DSX</text>
+    <text x="175" y="198" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">exclusive compute</text>
+    <rect x="310" y="96" width="250" height="140" rx="6" fill="url(#hall)" stroke="#fbbf24" stroke-width="1.5"/>
+    <rect x="310" y="86" width="250" height="14" rx="4" fill="#fbbf24"/>
+    <text x="435" y="150" text-anchor="middle" fill="#0b1220" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">OPENAI TENANT</text>
+    <text x="435" y="188" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="700">8 GW-IT</text>
+    <text x="435" y="212" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12">20-letni lease · SB Energy</text>
+    <rect x="590" y="118" width="200" height="118" rx="6" fill="url(#hall)" stroke="#334155"/>
+    <rect x="590" y="108" width="200" height="14" rx="4" fill="#60a5fa"/>
+    <text x="690" y="176" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" font-weight="700">4.25 GW start</text>
+    <text x="690" y="198" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">opcja +3.75 GW</text>
+    <rect x="820" y="128" width="160" height="108" rx="6" fill="#0f172a" stroke="#334155"/>
+    <text x="900" y="178" text-anchor="middle" fill="#76b900" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="700">LPS ~4 GW</text>
+    <text x="900" y="200" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">20 lat · 8-K</text>
+    <rect x="1010" y="138" width="140" height="98" rx="6" fill="#0f172a" stroke="#334155"/>
+    <text x="1080" y="184" text-anchor="middle" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="700">cap $105B</text>
+    <text x="1080" y="206" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">NVIDIA 8-K</text>
+  </g>
+  <rect x="70" y="258" width="1080" height="8" rx="4" fill="#1e3a5f"/>
+  <rect x="70" y="258" width="420" height="8" rx="4" fill="#76b900" opacity="0.7"/>
+  <text x="70" y="288" fill="#76b900" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">SB ENERGY · BUILD / OWN / OPERATE</text>
+  <text x="70" y="336" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="3">SIGNED · 17.08.2026 · PIKE COUNTY, OHIO</text>
+  <text x="70" y="376" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="32" font-weight="800">PORTS-Pike</text>
+  <text x="70" y="404" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">OpenAI tenant · NVIDIA DSX exclusive · fazy 2028–2030 · nie „rozmowy”</text>
 </svg>
