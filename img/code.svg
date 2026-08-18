@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="Claude Code 2.1.234 — auto-continue, GitLab MR, NT-path">
+  <rect width="800" height="440" fill="#0b1220"/>
+  <rect x="24" y="24" width="752" height="392" rx="20" fill="#111827" stroke="#334155"/>
+  <text x="48" y="62" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="800" letter-spacing="2.5">ANTHROPIC · CLAUDE CODE</text>
+  <text x="48" y="102" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">v2.1.234</text>
+  <text x="48" y="132" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">17.08.2026 20:20 UTC · tag GitHub · nie model launch</text>
+  <rect x="48" y="160" width="704" height="44" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="64" y="188" fill="#4ade80" font-family="ui-monospace,monospace" font-size="14">$ claude --version   →   2.1.234</text>
+  <rect x="48" y="220" width="220" height="150" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="64" y="252" fill="#4ade80" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">AUTO-CONTINUE</text>
+  <text x="64" y="282" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14" font-weight="600">limit claude.ai</text>
+  <text x="64" y="306" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">wznawia sesję po resecie</text>
+  <text x="64" y="328" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">/config → auto</text>
+  <rect x="284" y="220" width="220" height="150" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="300" y="252" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">GITLAB · SECURITY</text>
+  <text x="300" y="282" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14" font-weight="600">MR badge</text>
+  <text x="300" y="306" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">NT-path \??\ blocked</text>
+  <text x="300" y="328" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">remote / restore / upload</text>
+  <rect x="520" y="220" width="232" height="150" rx="12" fill="#0f172a" stroke="#fbbf24"/>
+  <text x="536" y="252" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">SKILL claude-api</text>
+  <text x="536" y="282" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14" font-weight="600">200k → 25k</text>
+  <text x="536" y="306" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">tokenów kontekstu</text>
+  <text x="536" y="328" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">docs on-demand</text>
+</svg>
