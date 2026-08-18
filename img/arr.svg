@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="Anthropic ARR 9 mld → 47 mld → 65 mld USD">
+  <rect width="800" height="440" fill="#0b1220"/>
+  <rect x="24" y="24" width="752" height="392" rx="20" fill="#111827" stroke="#334155"/>
+  <text x="48" y="62" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="800" letter-spacing="2.5">ANTHROPIC · ARR</text>
+  <text x="48" y="102" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">$9B → $47B → $65B</text>
+  <text x="48" y="132" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">YE2025 · maj 2026 · koniec lipca 2026 · Bloomberg via TechCrunch</text>
+  <rect x="64" y="168" width="88" height="72" rx="10" fill="#0f172a" stroke="#334155"/>
+  <text x="108" y="200" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">YE2025</text>
+  <text x="108" y="224" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20" font-weight="700">$9B</text>
+  <path d="M164 204 H214" stroke="#fbbf24" stroke-width="3"/>
+  <polygon points="214,196 232,204 214,212" fill="#fbbf24"/>
+  <rect x="244" y="156" width="120" height="96" rx="10" fill="#0f172a" stroke="#334155"/>
+  <text x="304" y="192" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">MAJ 2026</text>
+  <text x="304" y="226" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="24" font-weight="700">$47B</text>
+  <path d="M376 204 H426" stroke="#fbbf24" stroke-width="3"/>
+  <polygon points="426,196 444,204 426,212" fill="#fbbf24"/>
+  <rect x="456" y="140" width="160" height="128" rx="12" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="536" y="176" text-anchor="middle" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">KONIEC LIPCA</text>
+  <text x="536" y="220" text-anchor="middle" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="32" font-weight="800">$65B</text>
+  <text x="536" y="246" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12">annualized · reported</text>
+  <rect x="64" y="300" width="40" height="48" rx="4" fill="#334155"/>
+  <rect x="244" y="268" width="80" height="80" rx="4" fill="#1e3a5f"/>
+  <rect x="456" y="236" width="110" height="112" rx="4" fill="#fbbf24" opacity="0.85"/>
+  <text x="48" y="390" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">OpenAI ARR $40B (Bloomberg, ubiegły tydzień) · IPO $2T+ = spekulacja FT</text>
+</svg>
