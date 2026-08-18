@@ -17,11 +17,13 @@
   <rect width="1200" height="420" fill="url(#bg)"/>
   <circle cx="1080" cy="40" r="160" fill="#76b900" opacity="0.07"/>
   <circle cx="80" cy="380" r="120" fill="#fbbf24" opacity="0.05"/>
+  <!-- grid lines -->
   <g stroke="#1e293b" stroke-width="1" opacity="0.7">
     <path d="M0 310 H1200"/><path d="M0 340 H1200"/>
     <path d="M180 280 L40 420"/><path d="M420 280 L280 420"/><path d="M660 280 L520 420"/>
     <path d="M900 280 L760 420"/><path d="M1140 280 L1000 420"/>
   </g>
+  <!-- campus halls isometric-ish -->
   <g>
     <rect x="70" y="118" width="210" height="118" rx="6" fill="url(#hall)" stroke="#334155"/>
     <rect x="70" y="108" width="210" height="14" rx="4" fill="#76b900"/>
@@ -43,6 +45,7 @@
     <text x="1080" y="184" text-anchor="middle" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="700">cap $105B</text>
     <text x="1080" y="206" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">NVIDIA 8-K</text>
   </g>
+  <!-- power bus -->
   <rect x="70" y="258" width="1080" height="8" rx="4" fill="#1e3a5f"/>
   <rect x="70" y="258" width="420" height="8" rx="4" fill="#76b900" opacity="0.7"/>
   <text x="70" y="288" fill="#76b900" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">SB ENERGY · BUILD / OWN / OPERATE</text>
