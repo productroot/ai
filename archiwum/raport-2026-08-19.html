@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenAI pauzuje frontier RL. Astra może być Critical. Claude Code 2.1.235. · 19.08.2026</title>
+<style>
+:root{--bg:#0b1220;--card:#111827;--line:#334155;--txt:#e2e8f0;--mut:#94a3b8;--gold:#fbbf24;--ok:#60a5fa;--soft:#0f172a}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:ui-sans-serif,system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 22px 72px}.top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:14px;flex-wrap:wrap}
+.kicker{color:var(--gold);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}h1{font-size:34px;line-height:1.12}
+.sub{color:var(--mut);font-size:15px;max-width:780px}.live{background:#1e293b;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;color:#f87171;font-weight:700}
+.tldr{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 18px}.fact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.fact b{display:block;color:var(--gold);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}.fact span{font-size:14px}
+.hero{background:#111827;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:14px}.hero img{width:100%;height:240px;object-fit:contain;background:#0b1220;display:block}.hero-body{padding:18px 22px 22px}
+.meta{color:var(--mut);font-size:13px;margin-top:4px}.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 16px}.photos img{width:100%;height:180px;object-fit:contain;background:#0b1220;border-radius:12px;border:1px solid var(--line);display:block}
+.cap{color:var(--mut);font-size:12px;margin-top:4px}.sec{margin:22px 0 8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:12px}.card h3{font-size:20px;margin:0 0 6px}
+.tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-right:6px}
+.tag-ok{background:#052e16;color:#4ade80}.tag-med{background:#1e3a5f;color:#93c5fd}.tag-rum{background:#3f1d08;color:#fbbf24}.tag-risk{background:#450a0a;color:#f87171}
+p{margin:0}p+p{margin-top:8px}a{color:var(--ok);text-decoration:none}a:hover{text-decoration:underline}
+.sources{margin-top:10px;font-size:12px;color:var(--mut)}.sources a{margin-right:10px}.keys{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.keys span{background:#0b1220;border:1px solid #334155;border-radius:10px;padding:6px 10px;font-size:13px}
+.grid2eq{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.five{margin:4px 0 0 20px}.five li{margin:6px 0}.tweet{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px;margin:8px 0}.footer{color:var(--mut);font-size:12px;margin-top:22px}.note{font-size:12px;color:var(--mut);margin-top:10px}
+@media(max-width:800px){.tldr,.grid2eq,.photos{grid-template-columns:1fr}h1{font-size:26px}.hero img{height:160px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="kicker">Poranny przegląd AI · środa 19.08.2026</div>
+      <h1>OpenAI pauzuje frontier RL. Astra może być Critical. Claude Code 2.1.235.</h1>
+      <p class="sub">Nowe vs 18.08: oficjalna pauza RL + Astra <i>may meet</i> Critical (nie „jest Critical”), ChatGPT for Teens, Ads 31 EU (live next week), $5M oversight ≠ wczorajsze $1M+$1M, protein 14/15, Gmail send + Cowork paid, Code 2.1.235, Playground. X: 402 credits.</p>
+    </div>
+    <div class="live">Astra · may Critical</div>
+  </div>
+  <section class="tldr">
+    <div class="fact"><b>WAŻNE · ASTRA</b><span>OpenAI 18.08: 2 tyg. pauza RL na modelach do wdrożenia; największy planowany frontier RL run on hold. Astra <b>może</b> spełnić próg Critical cyber. Astra ≠ model w exploicie HF.</span></div>
+    <div class="fact"><b>NOWE · TEENS</b><span>ChatGPT for Teens (13–17 / age-prediction U18). Study Mode, homework reminders, parental controls. Rollout ~2 tyg. Skuteczność age-gating = nieudowodniona.</span></div>
+    <div class="fact"><b>NOWE · ADS EU</b><span>ChatGPT Ads w 31 rynkach UE, w tym PL. Live <b>od pon. 24.08</b>, nie dziś. Tylko Free/Go; Plus/Pro/Enterprise ad-free. Teens poza audience.</span></div>
+    <div class="fact"><b>NOWE · $5M</b><span>Oversight ciał demokratycznych / national security. Osobna koperta od wczorajszych grantów $1M+$1M (17.08). Recipients TBD.</span></div>
+    <div class="fact"><b>NOWE · PROTEIN</b><span>Claude (Mythos Preview + Opus 4.8) zaprojektował minibindery vs 15 celów; wet lab 14/15 (Adaptyv + Twist). Dual-use: design zablokowany na Fable 5.</span></div>
+    <div class="fact"><b>NOWE · GMAIL + COWORK</b><span>Gmail connector: send/reply/forward, default = approval. Cowork web/mobile beta na płatnych (Pro/Max/Team). Press 18.08, brak newsroom timestamp.</span></div>
+    <div class="fact"><b>NOWE · CODE 2.1.235</b><span>Tag 18.08 20:38 UTC. Spellcheck, LSP reconnect nie zabija cache, Shift+Tab ≠ session-wide edit. 2.1.234 zostaje ostatnim feature dropem.</span></div>
+    <div class="fact"><b>NOWE · PLAYGROUND</b><span>Console Workbench → Playground (18.08). Zapisane prompt/eval ze starego WB nie przechodzą. Experimental prompt-tools API wyłączone 17.08.</span></div>
+    <div class="fact"><b>MEDIA · Q2</b><span>WSJ via secondaries: OpenAI Q2 $6,7B / strata $12,3B; Anthropic $11,6B. Niesprawdzone, nienazwane źródła. Nie recyklinguj ARR $65B jako newsu.</span></div>
+    <div class="fact"><b>X · 402</b><span>Konektor user-X połączony (ProductRootIO). search_news/timelines: 402 credits depleted. search_posts_all nigdy nie użyte. Bez scrapu Chrome. Dziura ≠ cisza.</span></div>
+  </section>
+  <section class="hero">
+    <img src="../img/hero.svg" alt="OpenAI pauzuje frontier RL — Astra może spełnić próg Critical cyber">
+    <div class="hero-body">
+      <div class="kicker">WAŻNE · OFICJALNE · 18.08</div>
+      <h3>OpenAI zwalnia scaling: pauza RL i Astra <i>may meet</i> Critical</h3>
+      <div class="meta">openai.com · <i>Pacing model development in an era of cyber-critical capabilities</i> · 18.08.2026</div>
+      <div class="keys"><span>2 tyg. pauza RL</span><span>largest run on hold</span><span>Astra may Critical</span><span>nie model HF</span><span>Preparedness</span></div>
+      <p><span class="tag tag-risk">WAŻNE</span> Po incydencie Hugging Face <b>oraz</b> wstępnych dowodach, że nadchodzący model <b>Astra</b> może spełnić próg <b>Critical</b> cyber w Preparedness Framework, OpenAI ogłasza dwutygodniową pauzę reinforcement learning na najnowszych modelach przeznaczonych do wdrożenia. Największy planowany frontier RL run pozostaje wstrzymany. Astra <b>nie</b> była modelem w exploicie HF.</p>
+      <p><span class="tag tag-ok">FACT</span> Pauza nastąpiła. OpenAI nie wyklucza, że Astra spełni próg Critical. <span class="tag tag-rum">NIE PISAĆ</span> „Astra jest Critical” ani że Preparedness jest „rozwiązany”.</p>
+      <p class="sources">Źródła: <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">OpenAI pacing</a> <a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/">wcześniejsza nota Astra</a> <a href="https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/">TechCrunch</a> <a href="https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack">Verge</a></p>
+    </div>
+  </section>
+  <div class="photos">
+    <div><img src="../img/science.svg" alt="Claude protein wet lab 14 z 15"><div class="cap">Anthropic · wet lab 14/15 · Mythos 26,7% / Opus 4.8 22,6%</div></div>
+    <div><img src="../img/code.svg" alt="Claude Code 2.1.235"><div class="cap">Claude Code 2.1.235 · 18.08 20:38 UTC · spellcheck · LSP cache</div></div>
+  </div>
+  <h2 class="sec">Produkty i modele</h2>
+  <div class="grid2eq">
+    <section class="card"><h3>ChatGPT for Teens</h3><p><span class="tag tag-ok">NOWE</span> Experience 13–17 / age-prediction U18. Study Mode, homework reminders, parental controls. Rollout ~2 tyg. Skuteczność age-gating = nieudowodniona.</p><p class="sources"><a href="https://openai.com/index/chatgpt-for-teens/">OpenAI Teens</a> <a href="https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/">TechCrunch</a> <a href="https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode">Verge</a></p></section>
+    <section class="card"><h3>ChatGPT Ads → 31 rynków UE</h3><p><span class="tag tag-ok">NOWE</span> Live <b>od pon. 24.08</b>, nie dziś. W tym PL. Tylko Free/Go. Plus/Pro/Enterprise ad-free. Teens poza audience.</p><p class="sources"><a href="https://openai.com/index/chatgpt-ads-expands-across-europe/">OpenAI Ads</a> <a href="https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/">Adweek</a></p></section>
+  </div>
+  <div class="grid2eq">
+    <section class="card"><h3>Claude Gmail: send / reply / forward</h3><p><span class="tag tag-ok">NOWE</span> Default = approval za każdym razem. Team/Enterprise mogą odblokować auto-send. Paid. Press 18.08, brak newsroom timestamp.</p><p class="sources"><a href="https://support.claude.com/en/articles/10166901-use-google-workspace-connectors">Support Gmail</a> <a href="https://www.theverge.com/ai-artificial-intelligence/981739/claude-gmail-google-drive-connector-cowork-mobile-web">Verge</a></p></section>
+    <section class="card"><h3>Cowork web/mobile na płatnych</h3><p><span class="tag tag-ok">NOWE</span> Beta Pro/Max/Team; Enterprise gdy admin włączy. $20 Pro dostaje cloud Cowork. Nadal beta, nie GA.</p><p class="sources"><a href="https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile">Support Cowork</a> <a href="https://www.theverge.com/ai-artificial-intelligence/981739/claude-gmail-google-drive-connector-cowork-mobile-web">Verge</a></p></section>
+  </div>
+  <div class="grid2eq">
+    <section class="card"><h3>Claude Code 2.1.235</h3><p><span class="tag tag-ok">NOWE</span> 18.08 20:38 UTC. Spellcheck, LSP reconnect nie zabija cache, Shift+Tab ≠ session-wide edit. 2.1.234 zostaje ostatnim feature dropem.</p><p class="sources"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.235">GitHub v2.1.235</a> <a href="https://code.claude.com/docs/en/changelog">changelog</a></p></section>
+    <section class="card"><h3>Console Workbench → Playground</h3><p><span class="tag tag-ok">NOWE</span> 18.08. Zapisane prompt/eval ze starego WB nie przechodzą. Experimental prompt-tools API wyłączone 17.08.</p><p class="sources"><a href="https://platform.claude.com/docs/en/release-notes/overview">Release notes</a> <a href="https://platform.claude.com/playground">Playground</a></p></section>
+  </div>
+  <h2 class="sec">Laby i research</h2>
+  <div class="grid2eq">
+    <section class="card"><h3>Claude projektuje bindery — wet lab 14/15</h3><p><span class="tag tag-ok">NOWE</span> Mythos Preview + Opus 4.8; Adaptyv + Twist. Bindery 14/15. Multi-target 26,7% / 22,6% vs typ. 10–15%. Dual-use: design zablokowany na Fable 5.</p><p class="sources"><a href="https://www.anthropic.com/research/Claude-accelerates-protein-design">Anthropic research</a></p></section>
+    <section class="card"><h3>Claude Science + Tag on-call</h3><p><span class="tag tag-ok">NOWE</span> Science guide (beta): daemon u klienta. Tag: first SITREP, mediana 14 min. Nie nowy model / SKU.</p><p class="sources"><a href="https://claude.com/blog/the-claude-science-product-guide">Science guide</a> <a href="https://claude.com/blog/ai-ci-cd-on-call">AI CI/CD on-call</a></p></section>
+  </div>
+  <h2 class="sec">Biznes</h2>
+  <div class="grid2eq">
+    <section class="card"><h3>$5M oversight ≠ wczorajsze $1M+$1M</h3><p><span class="tag tag-ok">NOWE</span> $5 mln dla demokratycznych ciał nadzoru. Osobna linia od 17.08 ($1M+$1M, 14 projektów). Recipients TBD.</p><p class="sources"><a href="https://openai.com/index/strengthening-democratic-oversight-in-national-security/">$5M oversight</a> <a href="https://openai.com/index/new-policy-ideas-for-the-intelligence-age/">$1M+$1M (17.08)</a> <a href="https://openai.com/index/partnering-with-codeai/">CodeAI</a></p></section>
+    <section class="card"><h3>WSJ Q2 + Spirit $10M</h3><p><span class="tag tag-rum">REPORTED</span> OpenAI Q2 $6,7B / strata $12,3B; Anthropic $11,6B — second-hand, nienazwane źródła. <span class="tag tag-ok">NOWE</span> Google $10M za dane Spirit; hearing 19.08 17:00 CEST — pending order.</p><p class="sources"><a href="https://siliconangle.com/2026/08/18/openai-falls-further-behind-anthropic-with-disappointing-revenue-growth-and-mounting-losses/">SiliconANGLE</a> <a href="https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962">The Register</a></p></section>
+  </div>
+  <div class="grid2eq">
+    <section class="card"><h3>Cerebras CS-4 + Bedrock Grok 4.6</h3><p><span class="tag tag-ok">NOWE</span> CS-4: 3× WSE-3 Turbo, claim vendora. <span class="tag tag-med">SKU</span> Bedrock dodał Grok 4.6 — nie recyklinguj launchu 12.08.</p><p class="sources"><a href="https://www.cerebras.ai/cs4">Cerebras CS-4</a> <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-grok-4-6/">AWS Bedrock</a></p></section>
+    <section class="card"><h3>Firefox Smart Window + Linear + Copilot</h3><p><span class="tag tag-ok">NOWE</span> Mozilla Smart Window (opt-in, Exa). Linear: agenty ~połowa issue. <span class="tag tag-risk">Ars</span> Copilot <code>?autorun=1</code> — bez kroków reprodukcji.</p><p class="sources"><a href="https://blog.mozilla.org/en/firefox/firefox-smart-window/">Mozilla</a> <a href="https://linear.app/data">Linear</a> <a href="https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/">Ars</a></p></section>
+  </div>
+  <h2 class="sec">Open-source / narzędzia / gadżety</h2>
+  <div class="grid2eq">
+    <section class="card"><h3>HF MultiVectorEncoder + Blue Skies</h3><p><span class="tag tag-ok">NOWE</span> Sentence Transformers v6 late-interaction. Google £1,4M trial contrails Shanwick — climate-ops, nie Gemini.</p><p class="sources"><a href="https://huggingface.co/blog/multi-vector-encoder">HF MultiVectorEncoder</a> <a href="https://huggingface.co/blog/ibm-research/altk-evolve-hmm">ALTK-Evolve</a> <a href="https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/">Blue Skies</a></p></section>
+    <section class="card"><h3>HOVERAir VERSA + PH Taku</h3><p><span class="tag tag-ok">NOWE</span> <span class="tag tag-rum">CROWDFUNDING</span> VERSA Indiegogo 18.08, FCC USA, nie shipping. upvote0: Taku #1, Whisperstream local dictation. Peeko/Lumi/CtrlVibe: brak novum.</p><p class="sources"><a href="https://dronexl.co/2026/08/18/hoverair-versa-fcc-clearance-indiegogo-launch/">DroneXL</a> <a href="https://upvote0.com/daily/2026-08-18">upvote0 18.08</a> <a href="https://whisperstream.io/">Whisperstream</a></p></section>
+  </div>
+  <h2 class="sec">Sygnały X + Reddit + HN</h2>
+  <section class="card">
+    <p><span class="tag tag-risk">X HOLE</span> Konektor user-X połączony (ProductRootIO). search_news/timelines: <b>402 credits depleted</b>. search_posts_all nigdy nie użyte. Bez scrapu Chrome. Dziura X ≠ brak newsów.</p>
+    <p><span class="tag tag-risk">REDDIT HOLE</span> r/LocalLLaMA, r/ClaudeAI, r/OpenAI: 403. Nie wymyślamy wątków.</p>
+    <p>HN: Spirit 575 · CS-4 237 · machine0 73. X z HN: <a href="https://twitter.com/kuberwastaken/status/2089377982536388964">HP driver</a>. PORTS-Pike i ARR $65B: brak nowych oficjalnych liczb.</p>
+  </section>
+  <h2 class="sec">Co warto dziś sprawdzić</h2>
+  <section class="card"><ol class="five">
+    <li>Pacing / Astra may Critical. <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">OpenAI</a></li>
+    <li>Claude Code 2.1.235. <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.235">tag</a></li>
+    <li>Protein 14/15. <a href="https://www.anthropic.com/research/Claude-accelerates-protein-design">research</a></li>
+    <li>Ads EU 24.08 + Teens. <a href="https://openai.com/index/chatgpt-ads-expands-across-europe/">Ads</a> · <a href="https://openai.com/index/chatgpt-for-teens/">Teens</a></li>
+    <li>Hearing Spirit 17:00 CEST. <a href="https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962">Register</a></li>
+    <li>Gmail default=approval + Cowork paid. <a href="https://support.claude.com/en/articles/10166901-use-google-workspace-connectors">Gmail</a></li>
+    <li>$5M vs $1M+$1M. <a href="https://openai.com/index/strengthening-democratic-oversight-in-national-security/">$5M</a></li>
+  </ol></section>
+  <h2 class="sec">3 tweets ready to post</h2>
+  <section class="card">
+    <div class="tweet">OpenAI pauses RL on latest deploy-bound models for 2 weeks; largest planned frontier RL run on hold. Astra may meet Preparedness Critical cyber (not confirmed). Astra ≠ HF exploit model.<br><a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">https://openai.com/index/pacing-model-development-cyber-capabilities/</a></div>
+    <div class="tweet">Anthropic: Claude designed de novo minibinders vs 15 targets; independent wet-lab binders on 14/15 (Adaptyv Bio + Twist). Dual-use: protein design still blocked on Fable 5.<br><a href="https://www.anthropic.com/research/Claude-accelerates-protein-design">https://www.anthropic.com/research/Claude-accelerates-protein-design</a></div>
+    <div class="tweet">Claude Code 2.1.235: optional spellcheck (aspell/hunspell/ispell), LSP reconnect no longer kills prompt cache, Shift+Tab in permission comment ≠ session-wide edit.<br><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.235">https://github.com/anthropics/claude-code/releases/tag/v2.1.235</a></div>
+  </section>
+  <p class="footer">Raport 19.08.2026 · X 402 · Reddit 403 · <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">OpenAI pacing</a> · <a href="https://openai.com/index/chatgpt-for-teens/">Teens</a> · <a href="https://openai.com/index/chatgpt-ads-expands-across-europe/">Ads EU</a> · <a href="https://openai.com/index/strengthening-democratic-oversight-in-national-security/">$5M</a> · <a href="https://www.anthropic.com/research/Claude-accelerates-protein-design">protein</a> · <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.235">Code 2.1.235</a> · <a href="https://blog.google/innovation-and-ai/models-and-research/google-research/blue-skies/">Blue Skies</a> · <a href="https://huggingface.co/blog/multi-vector-encoder">MultiVectorEncoder</a></p>
+</div>
+</body>
+</html>
