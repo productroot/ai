@@ -1,24 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="Claude Code 2.1.235 — spellcheck, LSP cache, TUI polish">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="Claude Code 2.1.237 — Concise + gateway cache">
   <rect width="800" height="440" fill="#0b1220"/>
   <rect x="24" y="24" width="752" height="392" rx="20" fill="#111827" stroke="#334155"/>
   <text x="48" y="62" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="800" letter-spacing="2.4">ANTHROPIC · CLAUDE CODE</text>
-  <text x="48" y="102" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">v2.1.235</text>
-  <text x="48" y="132" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">18.08.2026 20:38 UTC · tag GitHub · point release, nie model</text>
+  <text x="48" y="102" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">v2.1.237</text>
+  <text x="48" y="132" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">20.08.2026 00:54 UTC · latest · nie pitchuj 2.1.235 jako new</text>
   <rect x="48" y="156" width="704" height="42" rx="8" fill="#0f172a" stroke="#334155"/>
-  <text x="64" y="183" fill="#4ade80" font-family="ui-monospace,monospace" font-size="14">$ claude --version   →   2.1.235</text>
-  <rect x="48" y="214" width="220" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
-  <text x="64" y="246" fill="#4ade80" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">SPELLCHECK</text>
-  <text x="64" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14" font-weight="600">opcjonalny underline</text>
-  <text x="64" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">aspell / hunspell / ispell</text>
-  <text x="64" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">LSP reconnect ≠ cache kill</text>
-  <rect x="284" y="214" width="220" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
-  <text x="300" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">TUI · PERMISSIONS</text>
-  <text x="300" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14" font-weight="600">nested markdown</text>
-  <text x="300" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Shift+Tab ≠ session edit</text>
-  <text x="300" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">don’t-ask if not fully shown</text>
-  <rect x="520" y="214" width="232" height="156" rx="12" fill="#0f172a" stroke="#fbbf24"/>
-  <text x="536" y="246" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">REMOTE · VS CODE</text>
-  <text x="536" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14" font-weight="600">SendMessage size gate</text>
-  <text x="536" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">claude rc = enterprise check</text>
-  <text x="536" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">focus jump na restore: fix</text>
+  <text x="64" y="183" fill="#60a5fa" font-family="ui-monospace,monospace" font-size="14">$ claude --version   →   2.1.237</text>
+  <rect x="48" y="214" width="340" height="156" rx="12" fill="#0f172a" stroke="#fbbf24"/>
+  <text x="64" y="246" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">CONCISE</text>
+  <text x="64" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">wynik bez preambuły</text>
+  <text x="64" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Output style w /config</text>
+  <text x="64" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">jedyny user-facing feature 20.08</text>
+  <rect x="404" y="214" width="348" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="420" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">GATEWAY CACHE</text>
+  <text x="420" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">custom base URL OK</text>
+  <text x="420" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Bedrock / Vertex / Foundry</text>
+  <text x="420" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">2.1.236 = feature drop 19.08</text>
 </svg>
