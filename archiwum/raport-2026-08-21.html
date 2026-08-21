@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatGPT w Messages. Claude Code 2.1.238. Slack Code. · 21.08.2026</title>
+<style>
+:root{--bg:#0b1220;--card:#111827;--line:#334155;--txt:#e2e8f0;--mut:#94a3b8;--gold:#fbbf24;--ok:#60a5fa;--soft:#0f172a}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:ui-sans-serif,system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 22px 72px}.top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:14px;flex-wrap:wrap}
+.kicker{color:var(--gold);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}h1{font-size:34px;line-height:1.12}
+.sub{color:var(--mut);font-size:15px;max-width:780px}.live{background:#1e293b;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;color:#f87171;font-weight:700}
+.tldr{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 18px}.fact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.fact b{display:block;color:var(--gold);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}.fact span{font-size:14px}
+.hero{background:#111827;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:14px}.hero img{width:100%;height:240px;object-fit:contain;background:#0b1220;display:block}.hero-body{padding:18px 22px 22px}
+.meta{color:var(--mut);font-size:13px;margin-top:4px}.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 16px}.photos img{width:100%;height:180px;object-fit:contain;background:#0b1220;border-radius:12px;border:1px solid var(--line);display:block}
+.cap{color:var(--mut);font-size:12px;margin-top:4px}.sec{margin:22px 0 8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:12px}.card h3{font-size:20px;margin:0 0 6px}
+.tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-right:6px}
+.tag-ok{background:#052e16;color:#4ade80}.tag-med{background:#1e3a5f;color:#93c5fd}.tag-rum{background:#3f1d08;color:#fbbf24}.tag-risk{background:#450a0a;color:#f87171}
+p{margin:0}p+p{margin-top:8px}a{color:var(--ok);text-decoration:none}a:hover{text-decoration:underline}
+.sources{margin-top:10px;font-size:12px;color:var(--mut)}.sources a{margin-right:10px}.keys{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.keys span{background:#0b1220;border:1px solid #334155;border-radius:10px;padding:6px 10px;font-size:13px}
+.grid2eq{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.five{margin:4px 0 0 20px}.five li{margin:6px 0}.tweet{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px;margin:8px 0}.footer{color:var(--mut);font-size:12px;margin-top:22px}
+@media(max-width:800px){.tldr,.grid2eq,.photos{grid-template-columns:1fr}h1{font-size:26px}.hero img{height:160px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="kicker">Poranny przegląd AI · piątek 21.08.2026</div>
+      <h1>ChatGPT w Messages. Claude Code 2.1.238. Slack Code.</h1>
+      <p class="sub">Nowe vs 20.08: Messages plugin, Code 2.1.238, Academy, Grok Build wszystkie plany, Slack Code, Ramp Q3, Alibaba −75%, Ars Grok exfil. X: 402. Reddit: 403. Dziura ≠ cisza.</p>
+    </div>
+    <div class="live">Messages plugin</div>
+  </div>
+
+  <section class="tldr">
+    <div class="fact"><b>WAŻNE · MESSAGES</b><span>ChatGPT desktop (Apple silicon) czyta iMessage/SMS/RCS i wysyła. Domyślnie zgoda per wiadomość. FACT shipped. TC 21.08 00:09 CEST.</span></div>
+    <div class="fact"><b>NOWE · CODE 2.1.238</b><span>20.08 20:33 UTC: readline vs classic, marketplace headersHelper, runner shutdown/proxy. 2.1.237 nie jest novum.</span></div>
+    <div class="fact"><b>NOWE · ACADEMY</b><span>Claude Academy 20.08: publiczna AI-fluency (4D Framework) na academy.claude.com. Nowy surface, nie recykling Platform GA.</span></div>
+    <div class="fact"><b>NOWE · GROK BUILD</b><span>19.08 (wczoraj pominięte): Build na każdym planie — web, iOS, Android. grok.me, remix, custom domains, export GitHub.</span></div>
+    <div class="fact"><b>NOWE · SLACK CODE</b><span>Kanały vibe-coding: Claude Code / Devin / Vercel / Copilot. Diffs, HTML preview, audit. Wszystkie plany Slack, day one.</span></div>
+    <div class="fact"><b>NOWE · RAMP Q3</b><span>FACT na próbce ~70k. Lipiec: Anthropic 43,5 vs OpenAI 39,7. Q3-to-date OpenAI dogania. Nie census rynku.</span></div>
+    <div class="fact"><b>NOWE · ALIBABA</b><span>Q1 FACT: zysk −75%, AI cloud +45%, capex +75%. Eddie Wu: 12. kwartał triple-digit na AI product.</span></div>
+    <div class="fact"><b>WAŻNE · GROK EXFIL</b><span>Ars: szyfrowane instrukcje wyciągają dane. xAI poinformowane w czerwcu, bez fixa przy publikacji. FACT techniki.</span></div>
+  </section>
+
+  <section class="hero">
+    <img src="../img/hero.svg" alt="ChatGPT Apple Messages plugin — FACT shipped, zgoda per wysyłkę">
+    <div class="hero-body">
+      <div class="kicker">WAŻNE · OFICJALNE · 21.08 00:09 CEST</div>
+      <h3>ChatGPT wysyła SMS-y: plugin Apple Messages</h3>
+      <div class="meta">TechCrunch · learn.chatgpt.com · macOS Apple silicon · 21.08.2026</div>
+      <div class="keys"><span>shipped = FACT</span><span>zgoda per send</span><span>Apple silicon only</span><span>Work + Codex</span></div>
+      <p><span class="tag tag-ok">NOWE</span> Desktop ChatGPT na Macach Apple silicon czyta i szuka iMessage, SMS i RCS, potem draftuje, kasuje lub wysyła. Domyślnie zgoda per wiadomość i odbiorca; OpenAI odradza trwałe zatwierdzenie.</p>
+      <p><span class="tag tag-rum">REPORTED</span> OpenAI do Bloomberga (cyt. TC): plugin „runs locally” i „nie indeksuje wszystkich wiadomości”. Mechanika nadal niejasna. Hardware lock: tylko Apple silicon.</p>
+      <p class="sources"><a href="https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/">TechCrunch</a> <a href="https://learn.chatgpt.com/docs/changelog">Changelog ChatGPT</a></p>
+    </div>
+  </section>
+
+  <div class="photos">
+    <div><img src="../img/code.svg" alt="Claude Code 2.1.238 — readline, headersHelper, runner"><div class="cap">Claude Code 2.1.238 · 20.08 20:33 UTC · readline · headersHelper · runner</div></div>
+    <div><img src="../img/slack.svg" alt="Slack Code — kanały vibe-coding na wszystkich planach"><div class="cap">Slack Code · wszystkie plany · Claude / Devin / Vercel / Copilot</div></div>
+  </div>
+
+  <h2 class="sec">Produkty i modele</h2>
+  <div class="grid2eq">
+    <section class="card">
+      <h3>Claude Code 2.1.238</h3>
+      <p><span class="tag tag-ok">NOWE</span> 20.08 20:33 UTC (22:33 CEST): <code>keybindingFlavor</code> readline vs classic Ctrl+W, marketplace <code>headersHelper</code>, flagi runnera <code>--defer-shutdown-max-min</code> i proxy-authorization. To 2.1.238; 2.1.237 nie jest novum.</p>
+      <p class="sources"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.238">v2.1.238</a> <a href="https://code.claude.com/docs/en/changelog">Changelog</a></p>
+    </section>
+    <section class="card">
+      <h3>Claude Academy</h3>
+      <p><span class="tag tag-ok">NOWE</span> 20.08: publiczna AI-fluency (4D Framework, human–agent teams) na academy.claude.com + skill ze ścieżkami. Companion: computer use HIPAA-eligible, Files 5× rpm — nie drugi launch Platform GA 19.08.</p>
+      <p class="sources"><a href="https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai">Claude Academy</a></p>
+    </section>
+  </div>
+  <div class="grid2eq">
+    <section class="card">
+      <h3>Grok Build na każdym planie</h3>
+      <p><span class="tag tag-ok">NOWE</span> 19.08 (wczoraj pominięte): aplikacje, gry, strony z SuperGrok Heavy Early Beta na web, iOS i Android — wszystkie plany. grok.me, remix, custom domains, export GitHub; osobne od CLI.</p>
+      <p class="sources"><a href="https://x.ai/news/grok-build-for-everyone">x.ai Grok Build</a></p>
+    </section>
+    <section class="card">
+      <h3>Prompt Caching + obraz + GitLab</h3>
+      <p><span class="tag tag-ok">NOWE</span> 20.08: dashboard Prompt Caching (hit rate, reads/write) i gpt-image-2 z przezroczystym tłem png/webp (preview). Codex cloud GitLab beta 19.08 — też wczoraj pominięte.</p>
+      <p class="sources"><a href="https://developers.openai.com/api/docs/changelog">API changelog</a> <a href="https://learn.chatgpt.com/docs/changelog">Learn</a></p>
+    </section>
+  </div>
+  <div class="grid2eq">
+    <section class="card">
+      <h3>Slack Code</h3>
+      <p><span class="tag tag-ok">NOWE</span> 20.08: tag Claude Code / Devin / Vercel Agent / Copilot → kanał z diffs, HTML preview, auto-archive, audit. Wszystkie plany Slack, day one — vibe-coding tam, gdzie żyje ticket.</p>
+      <p class="sources"><a href="https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch">The Verge</a></p>
+    </section>
+  </div>
+
+  <h2 class="sec">Laby i research</h2>
+  <div class="grid2eq">
+    <section class="card">
+      <h3>OpenAI AI Futures</h3>
+      <p><span class="tag tag-ok">NOWE</span> 20.08 Dean Ball: blog Strategic Futures — jak zachować prawa jednostki przy transformative AI. Widoki autora, nie polityka OpenAI. Nie mylić z aifutures.org.</p>
+      <p class="sources"><a href="https://openai.com/index/introducing-ai-futures/">AI Futures</a></p>
+    </section>
+    <section class="card">
+      <h3>Gemma: 1 mld pobrań</h3>
+      <p><span class="tag tag-ok">NOWE</span> 20.08: rodzina Gemma &gt;1 mld downloadów; 100k+ wariantów. NASA on-orbit, NHA/Aarogya Setu 2.0, C2S-Scale. Awesome Gemma. Student hub = wczoraj, nie recykling.</p>
+      <p class="sources"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/">Google Gemma</a></p>
+    </section>
+  </div>
+  <div class="grid2eq">
+    <section class="card">
+      <h3>Mistral Agentic Search</h3>
+      <p><span class="tag tag-ok">NOWE</span> 20.08: pętla search/open/navigate/read/grep. FinanceBench (vendor, default stack) 26,7%→86%. Cloud + on-prem. Liczby = bench Mistral, nie niezależny audit.</p>
+      <p class="sources"><a href="https://mistral.ai/news/agentic-search">Mistral</a></p>
+    </section>
+  </div>
+
+  <h2 class="sec">Biznes</h2>
+  <div class="grid2eq">
+    <section class="card">
+      <h3>Ramp: OpenAI dogania Anthropic</h3>
+      <p><span class="tag tag-ok">NOWE</span> FACT na próbce Ramp ~70k US firm (nie census). Lipiec: Anthropic 43,5% vs OpenAI 39,7%. Q3-to-date OpenAI rośnie szybciej. Kharazian: GPT-5.6 Sol.</p>
+      <p class="sources"><a href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/">TechCrunch Ramp</a></p>
+    </section>
+    <section class="card">
+      <h3>Alibaba Q1: zysk −75%</h3>
+      <p><span class="tag tag-ok">NOWE</span> FACT earnings 20.08: przychód +9% ¥269 mld; zysk ¥10,5 mld (−75%); capex +75% ¥67,7 mld; AI cloud +45% ¥48,4 mld. Wu: AI product 12. kwartał triple-digit.</p>
+      <p class="sources"><a href="https://www.cnbc.com/2026/08/20/alibaba-cloud-revenue.html">CNBC</a></p>
+    </section>
+    <section class="card">
+      <h3>Nevada: Tesla 5k / Waymo 1k / Uber 1k</h3>
+      <p><span class="tag tag-ok">NOWE</span> FACT NTA 20.08: Clark County — Tesla do 5 tys. robotaxi, Waymo 1 tys., Uber 1 tys. (Motional+Zoox). Sufit 8 tys. / 12 mies. Las Vegas = trójstronna walka.</p>
+      <p class="sources"><a href="https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/">TechCrunch Nevada</a></p>
+    </section>
+  </div>
+
+  <h2 class="sec">Open-source / dev</h2>
+  <div class="grid2eq">
+    <section class="card">
+      <h3>Ox Alpha — stealth, nienazwany lab</h3>
+      <p><span class="tag tag-ok">NOWE</span> <span class="tag tag-med">TREND</span> OpenRouter <code>stealth/ox-alpha</code>: 1,05M ctx, darmowy tydzień. Nikt nie wziął na siebie. HN 70. To routing event, nie release labu.</p>
+      <p class="sources"><a href="https://openrouter.ai/stealth/ox-alpha">Ox Alpha</a> <a href="https://news.ycombinator.com/item?id=49381896">HN 70</a></p>
+    </section>
+    <section class="card">
+      <h3>mattpocock/skills</h3>
+      <p><span class="tag tag-med">TREND</span> GH daily: +2 192★. „Skills for Real Engineers” z <code>.agents</code>. Meta plików skills zjada GitHub. Nie nowy model.</p>
+      <p class="sources"><a href="https://github.com/mattpocock/skills">mattpocock/skills</a></p>
+    </section>
+  </div>
+
+  <h2 class="sec">Narzędzia</h2>
+  <div class="grid2eq">
+    <section class="card">
+      <h3>Piano autocomplete 125M</h3>
+      <p><span class="tag tag-ok">NOWE</span> Show HN 539: on-device transformer, Core ML, ~108 nut/s na iPhonie 15. Produkt, nie kolejny chat UI. Najczystszy Show HN okna.</p>
+      <p class="sources"><a href="https://simedw.com/2026/08/20/midi-autocomplete/">simedw</a> <a href="https://news.ycombinator.com/item?id=49373456">HN 539</a></p>
+    </section>
+    <section class="card">
+      <h3>Huzzah — pseudokod jako źródło</h3>
+      <p><span class="tag tag-ok">NOWE</span> Show HN 258: zapisujesz intent jako pseudokod, kod jest pochodną. PoC — narzędzie dnia przeciw agent-fatigue.</p>
+      <p class="sources"><a href="https://www.danielvaughn.dev/posts/huzzah/">Huzzah</a> <a href="https://news.ycombinator.com/item?id=49378768">HN 258</a></p>
+    </section>
+  </div>
+
+  <h2 class="sec">Gadżety</h2>
+  <div class="grid2eq">
+    <section class="card">
+      <h3>Okulary Meta w pracy</h3>
+      <p><span class="tag tag-ok">NOWE</span> <span class="tag tag-med">SHIPPING</span> Verge 20.08: retail/service filmowani „dla pranków”; ICE już zakazał. Super-sensing next-gen = REPORTED (FT). Labor, nie SKU.</p>
+      <p class="sources"><a href="https://www.theverge.com/report/982414/meta-glasses-work-surveillance-labor-security">The Verge glasses</a></p>
+    </section>
+    <section class="card">
+      <h3>DJI Pocket 4P — szara strefa US</h3>
+      <p><span class="tag tag-ok">NOWE</span> <span class="tag tag-med">SHIPPING</span> Verge: Osmo Pocket 4/4P już w USA przez Temu/Ali/eBay mimo banu importu FCC — DJI: nie oficjalny kanał (ban = import, nie posiadanie). MemoMind KS zamyka 27.08 — TREND, nie novum.</p>
+      <p class="sources"><a href="https://www.theverge.com/tech/981669/dji-osmo-pocket-4-pro-us-ban-black-market">The Verge DJI</a></p>
+    </section>
+  </div>
+
+  <h2 class="sec">Sygnały X + Reddit + HN</h2>
+  <section class="card">
+    <p><span class="tag tag-risk">X HOLE</span> user-X połączony (@ProductRootIO). Po <code>get_users_me</code> → <b>402 credits depleted</b>. <code>search_posts_all</code> nigdy nie użyte. Bez scrapu Chrome. Dziura ≠ cisza.</p>
+    <p><span class="tag tag-risk">REDDIT HOLE</span> r/LocalLLaMA, r/ClaudeAI, r/OpenAI: 403. Nie wymyślamy wątków.</p>
+    <p>HN: GitHub outage PM 424 · piano 539 · Huzzah 258 · Ox Alpha 70 · Codex Bedrock 10× (niezweryfikowany bug). Ars Grok exfil: xAI wiedziało od czerwca. <span class="tag tag-rum">REPORTED</span> Reuters/Yahoo: student UT Dallas vs AISI Mythos 5.</p>
+    <p class="sources"><a href="https://news.ycombinator.com/item?id=49378957">HN 424</a> <a href="https://news.ycombinator.com/item?id=49383326">Codex Bedrock</a> <a href="https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/">Ars Grok</a> <a href="https://www.yahoo.com/news/science/articles/exclusive-texas-student-blew-whistle-100527735.html">Reuters/Yahoo</a></p>
+  </section>
+
+  <h2 class="sec">Co warto dziś sprawdzić</h2>
+  <section class="card"><ol class="five">
+    <li>Messages plugin — FACT shipped, zgoda per send. <a href="https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/">TC</a> · <a href="https://learn.chatgpt.com/docs/changelog">Learn</a></li>
+    <li>Code 2.1.238 (nie 2.1.237). <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.238">v2.1.238</a></li>
+    <li>Academy + Grok Build wszystkie plany. <a href="https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai">Academy</a> · <a href="https://x.ai/news/grok-build-for-everyone">Build</a></li>
+    <li>Slack Code + cache dashboard + GitLab beta. <a href="https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch">Slack</a> · <a href="https://developers.openai.com/api/docs/changelog">API</a></li>
+    <li>Ramp Q3 + Alibaba −75% + Nevada 5k/1k/1k. <a href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/">Ramp</a> · <a href="https://www.cnbc.com/2026/08/20/alibaba-cloud-revenue.html">Alibaba</a> · <a href="https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/">Nevada</a></li>
+    <li>Ars Grok exfil + piano 539 + Huzzah 258 + Ox Alpha. <a href="https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/">Ars</a> · <a href="https://simedw.com/2026/08/20/midi-autocomplete/">piano</a> · <a href="https://openrouter.ai/stealth/ox-alpha">Ox</a></li>
+    <li>Meta glasses labor + DJI 4P grey. <a href="https://www.theverge.com/report/982414/meta-glasses-work-surveillance-labor-security">glasses</a> · <a href="https://www.theverge.com/tech/981669/dji-osmo-pocket-4-pro-us-ban-black-market">DJI</a></li>
+  </ol></section>
+
+  <h2 class="sec">3 tweets ready to post</h2>
+  <section class="card">
+    <div class="tweet">ChatGPT desktop on Apple silicon Macs can now read, draft and send iMessage, SMS and RCS. Default: per-send + recipient approval. FACT shipped.<br><a href="https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/">https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/</a></div>
+    <div class="tweet">Claude Code 2.1.238 (20 Aug 20:33 UTC): readline keybindings, marketplace headersHelper, runner shutdown + proxy-auth flags. 2.1.237 is not the news.<br><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.238">https://github.com/anthropics/claude-code/releases/tag/v2.1.238</a></div>
+    <div class="tweet">Slack Code is live on every Slack plan: tag Claude Code, Devin, Vercel Agent or Copilot → dedicated channel with diffs, HTML preview, audit log.<br><a href="https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch">https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch</a></div>
+  </section>
+
+  <p class="footer">Raport 21.08.2026 · X 402 · Reddit 403 · <a href="https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/">Messages</a> · <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.238">Code 2.1.238</a> · <a href="https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai">Academy</a> · <a href="https://x.ai/news/grok-build-for-everyone">Grok Build</a> · <a href="https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch">Slack Code</a> · <a href="https://developers.openai.com/api/docs/changelog">API</a> · <a href="https://openai.com/index/introducing-ai-futures/">AI Futures</a> · <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/">Gemma</a> · <a href="https://mistral.ai/news/agentic-search">Mistral</a> · <a href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/">Ramp</a> · <a href="https://www.cnbc.com/2026/08/20/alibaba-cloud-revenue.html">Alibaba</a> · <a href="https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/">Ars</a></p>
+</div>
+</body>
+</html>
