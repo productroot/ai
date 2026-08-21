@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="Slack Code — kanały vibe-coding na wszystkich planach">
+  <rect width="800" height="440" fill="#0b1220"/>
+  <rect x="24" y="24" width="752" height="392" rx="20" fill="#111827" stroke="#334155"/>
+  <text x="48" y="62" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="800" letter-spacing="2.4">SLACK · VIBE-CODING CHANNELS</text>
+  <text x="48" y="102" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="700">Slack Code</text>
+  <text x="48" y="130" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">20.08.2026 · wszystkie plany · day one</text>
+  <rect x="48" y="156" width="704" height="42" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="64" y="183" fill="#60a5fa" font-family="ui-monospace,monospace" font-size="14">@claude  @devin  @vercel-agent  @copilot  →  #code</text>
+  <rect x="48" y="214" width="220" height="156" rx="12" fill="#0f172a" stroke="#fbbf24"/>
+  <text x="64" y="246" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">KANAŁ</text>
+  <text x="64" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">diffs + preview</text>
+  <text x="64" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">HTML live preview</text>
+  <text x="64" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">auto-archive</text>
+  <rect x="284" y="214" width="220" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="300" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">AGENTY</text>
+  <text x="300" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">4 narzędzia</text>
+  <text x="300" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Claude Code · Devin</text>
+  <text x="300" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Vercel · Copilot</text>
+  <rect x="520" y="214" width="232" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="536" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">AUDIT</text>
+  <text x="536" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">wszystkie plany</text>
+  <text x="536" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">log + ticket w pokoju</text>
+  <text x="536" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">The Verge · 20.08</text>
+</svg>
