@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="Grok Bot na SuperGrok Plus/Heavy i Cursor Pro+/Ultra/Teams">
+  <rect width="800" height="440" fill="#0b1220"/>
+  <rect x="24" y="24" width="752" height="392" rx="20" fill="#111827" stroke="#334155"/>
+  <text x="48" y="62" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="800" letter-spacing="2.4">XAI · GROK BOT</text>
+  <text x="48" y="102" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">więcej planów</text>
+  <text x="48" y="132" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">21.08.2026 · FACT x.ai/news/grok-bot-more-plans</text>
+  <rect x="48" y="156" width="704" height="42" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="64" y="183" fill="#60a5fa" font-family="ui-monospace,monospace" font-size="14">SuperGrok + Cursor · cloud computer · browser/terminal</text>
+  <rect x="48" y="214" width="340" height="156" rx="12" fill="#0f172a" stroke="#fbbf24"/>
+  <text x="64" y="246" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">SUPERGROK</text>
+  <text x="64" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="600">Plus + Heavy</text>
+  <text x="64" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">cloud computer · browser</text>
+  <text x="64" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">group chats · routines</text>
+  <text x="64" y="344" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Enterprise = waitlista</text>
+  <rect x="404" y="214" width="348" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="420" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">CURSOR</text>
+  <text x="420" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="600">Pro+ · Ultra · Teams</text>
+  <text x="420" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Standard i Premium</text>
+  <text x="420" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">beta od 11.08 · teraz w planie</text>
+  <text x="420" y="344" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">nie Grok Build every-plan</text>
+</svg>
