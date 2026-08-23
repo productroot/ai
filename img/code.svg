@@ -1,29 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="Claude Code 2.1.239 — koszt 1,1×, /claude-api, synced plugins, Bedrock">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="Claude Code 2.1.241 — bug fixes and reliability improvements only">
   <rect width="800" height="440" fill="#0b1220"/>
   <rect x="24" y="24" width="752" height="392" rx="20" fill="#111827" stroke="#334155"/>
   <text x="48" y="62" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="800" letter-spacing="2.4">ANTHROPIC · CLAUDE CODE</text>
-  <text x="48" y="102" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">v2.1.239</text>
-  <text x="48" y="132" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">21.08.2026 19:54 UTC · latest · 2.1.238 nie novum</text>
+  <text x="48" y="102" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">v2.1.241</text>
+  <text x="48" y="132" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">23.08.2026 00:52 UTC · latest · 2.1.239 nie novum</text>
   <rect x="48" y="156" width="704" height="42" rx="8" fill="#0f172a" stroke="#334155"/>
-  <text x="64" y="183" fill="#60a5fa" font-family="ui-monospace,monospace" font-size="14">$ claude --version   →   2.1.239</text>
-  <rect x="48" y="214" width="164" height="156" rx="12" fill="#0f172a" stroke="#fbbf24"/>
-  <text x="62" y="246" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">KOSZT</text>
-  <text x="62" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">1,1× US-only</text>
-  <text x="62" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">/cost · status</text>
-  <text x="62" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">--max-budget-usd</text>
-  <rect x="228" y="214" width="164" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
-  <text x="242" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">API</text>
-  <text x="242" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="15" font-weight="600">/claude-api</text>
-  <text x="242" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">upgrade 0.x→1.x</text>
-  <text x="242" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Python SDK</text>
-  <rect x="408" y="214" width="164" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
-  <text x="422" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">PLUGINS</text>
-  <text x="422" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="15" font-weight="600">name@synced</text>
-  <text x="422" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">cloud-synced</text>
-  <text x="422" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">nie nadpisze local</text>
-  <rect x="588" y="214" width="164" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
-  <text x="602" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">BEDROCK</text>
-  <text x="602" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="15" font-weight="600">proxy fix</text>
-  <text x="602" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Content-Type strip</text>
-  <text x="602" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">no double-bill</text>
+  <text x="64" y="183" fill="#60a5fa" font-family="ui-monospace,monospace" font-size="14">$ claude --version   →   2.1.241</text>
+  <rect x="48" y="214" width="344" height="156" rx="12" fill="#0f172a" stroke="#fbbf24"/>
+  <text x="62" y="246" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">2.1.241 · LATEST</text>
+  <text x="62" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">23.08 00:52 UTC</text>
+  <text x="62" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">02:52 CEST</text>
+  <text x="62" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">GitHub release + CHANGELOG</text>
+  <text x="62" y="346" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">FACT · oficjalny tag</text>
+  <rect x="408" y="214" width="344" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="422" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">2.1.240 · SOBOTA</text>
+  <text x="422" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">22.08 14:45 UTC</text>
+  <text x="422" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">16:45 CEST</text>
+  <text x="422" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">ten sam oficjalny tekst</text>
+  <text x="422" y="346" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">bugfix only · no features</text>
 </svg>
