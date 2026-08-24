@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="ChatGPT Ads go live 24 August 2026 in 31 EU markets, no personalization in EEA">
+  <rect width="800" height="440" fill="#0b1220"/>
+  <rect x="24" y="24" width="752" height="392" rx="20" fill="#111827" stroke="#334155"/>
+  <text x="48" y="62" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="800" letter-spacing="2.4">OPENAI · CHATGPT ADS</text>
+  <text x="48" y="100" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="700">31 rynków UE · 24.08</text>
+  <text x="48" y="128" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">Free+Go · Plus/Pro/Enterprise bez reklam · Polska na liście</text>
+  <g transform="translate(430,46)">
+    <ellipse cx="120" cy="118" rx="86" ry="108" fill="#0f172a" stroke="#fbbf24" stroke-width="1.6"/>
+    <ellipse cx="120" cy="70" rx="42" ry="28" fill="#111827" stroke="#334155"/>
+    <circle cx="88" cy="98" r="6" fill="#fbbf24"/>
+    <circle cx="128" cy="86" r="5" fill="#fbbf24"/>
+    <circle cx="154" cy="118" r="5" fill="#fbbf24"/>
+    <circle cx="96" cy="136" r="5" fill="#fbbf24"/>
+    <circle cx="140" cy="150" r="5" fill="#fbbf24"/>
+    <circle cx="72" cy="124" r="4" fill="#60a5fa"/>
+    <circle cx="168" cy="96" r="4" fill="#60a5fa"/>
+    <circle cx="110" cy="168" r="4" fill="#60a5fa"/>
+    <text x="120" y="214" text-anchor="middle" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">EEA / CH · 31</text>
+    <text x="120" y="232" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">go-live dziś</text>
+  </g>
+  <rect x="48" y="154" width="360" height="42" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="64" y="181" fill="#60a5fa" font-family="ui-monospace,monospace" font-size="13">Ads Manager · later this quarter</text>
+  <rect x="48" y="214" width="172" height="156" rx="12" fill="#0f172a" stroke="#fbbf24"/>
+  <text x="62" y="246" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">START</text>
+  <text x="62" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">24.08.2026</text>
+  <text x="62" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">31 rynków</text>
+  <text x="62" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">Free + Go</text>
+  <text x="62" y="344" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">FACT rollout</text>
+  <rect x="232" y="214" width="176" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="246" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">EEA</text>
+  <text x="246" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="15" font-weight="600">bez personalizacji</text>
+  <text x="246" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">temat · urządzenie</text>
+  <text x="246" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">pora · język</text>
+  <text x="246" y="344" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">gruba lokalizacja</text>
+</svg>
