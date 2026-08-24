@@ -1,7 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="800" height="220">
-  <rect width="800" height="220" fill="#0b1220"/>
-  <rect x="16" y="16" width="768" height="188" rx="16" fill="#111827" stroke="#334155"/>
-  <text x="40" y="80" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="700">CODEX · GPT-5.6 SOL</text>
-  <text x="40" y="125" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">1M context via ChatGPT</text>
-  <text x="40" y="165" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16">staff tweet · not an openai.com changelog</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-label="Codex CLI 0.149.1 overnight patch 24 August 00:28 UTC">
+  <rect width="800" height="440" fill="#0b1220"/>
+  <rect x="24" y="24" width="752" height="392" rx="20" fill="#111827" stroke="#334155"/>
+  <text x="48" y="62" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="800" letter-spacing="2.4">OPENAI · CODEX CLI</text>
+  <text x="48" y="102" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="700">0.149.1</text>
+  <text x="48" y="132" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14">tag rust-v0.149.1 · 24.08 00:28 UTC · 02:28 CEST</text>
+  <rect x="48" y="156" width="704" height="42" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="64" y="183" fill="#60a5fa" font-family="ui-monospace,monospace" font-size="14">@openai/codex@0.149.1   ·   patch on 0.149.0</text>
+  <rect x="48" y="214" width="224" height="156" rx="12" fill="#0f172a" stroke="#fbbf24"/>
+  <text x="62" y="246" fill="#fbbf24" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">THREADS</text>
+  <text x="62" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">classify</text>
+  <text x="62" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">exec callers</text>
+  <text x="62" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">nowe wątki</text>
+  <rect x="288" y="214" width="224" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="302" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">IMAGES</text>
+  <text x="302" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">compaction</text>
+  <text x="302" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">budget retained</text>
+  <text x="302" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">remote compact</text>
+  <rect x="528" y="214" width="224" height="156" rx="12" fill="#0f172a" stroke="#334155"/>
+  <text x="542" y="246" fill="#60a5fa" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" font-weight="800">MEMORY</text>
+  <text x="542" y="276" fill="#e2e8f0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="600">consolidation</text>
+  <text x="542" y="300" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">detached = consolid.</text>
+  <text x="542" y="322" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">nie model / pricing</text>
 </svg>
